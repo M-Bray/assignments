@@ -2,6 +2,33 @@ var shopper = {
     name: "Swanson",
     money: 100,
     isUsingCash: true,
-    groceryCart: [eggs = 2.25, bacon = 7.25, onions = 4.00, carrots = 5.25, cabbage = 2.25, apples = 5.00, oranges = 5.00, bread = 5.50, mayo = 6.25, trailmix = 4.25, cheesecake = 6.00, beer  = 12.50]
-    function: 
+};
+
+var groceryCart = {
+    Foods: [{
+        eggs: {
+            price: 5.50
+        }, 
+        bacon: {
+            price: 7.25
+        }, 
+        onions: {
+            price: 3.00
+        }, 
+        carrots: {
+            price: 3.25
+        },
+        cabbage: {
+            price: 2.50
+        }, 
+        apples: {
+            price: 3.25
+        }, 
+        oranges: {
+            price: 3.00
+        }, 
+        bread: {
+            price: 4.25
+        }, 
+}]
 }
