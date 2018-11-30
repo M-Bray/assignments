@@ -45,3 +45,14 @@ if(1 === "1") {
 if(1 <= 2 && 2 === 4 || (3*4) > 10 && (5 + 10) > 10) {
     console.log("yes")
 }
+
+// GOLD \\
+
+var dog = "dog"
+if(typeof dog === "string") {
+    console.log(true)
+};
+var boolean = "true"
+if(typeof boolean === "boolean") {
+    console.log(true || false)
+}
