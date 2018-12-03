@@ -9,22 +9,21 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var Enemies= ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"]
+var Enemies = ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"]
 
 function whoWins(isThereKryptonite, enemyName) {
     if (!isThereKryptonite) {
-    return "Superman beats" + enemyName + ", of course";
-}   else {
-    return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemyname +" could possibly win this one.";
-    }
-for (var i = 0; i < enemies.length; i++)
-{
-    var isThereKryptonite 
-    if (i % 2 === 0) {
-        isThereKryptonite = true;
+        return "Superman beats" + enemyName + ", of course";
     } else {
-        isThereKryptonite = false;
+        return "Depends on how quick Superman can get rid of the Kryptonite. "+ enemyname +" could possibly win this one.";
     }
+    for (var i = 0; i < enemies.length; i++) {
+        var isThereKryptonite 
+        if (i % 2 === 0) {
+            isThereKryptonite = true;
+        } else {
+            isThereKryptonite = false;
+        }
     console.log(whoWins(isThereKryptonite, enemies[i]));
 }}
 
@@ -46,4 +45,3 @@ while (clarkKent) {
         clarkKent=false;
         superman=true;
         console.log("Now I'm Superman!");}}
-        
