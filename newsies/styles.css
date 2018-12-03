@@ -3,12 +3,14 @@
     margin: 0;
     padding: 0;
 }
-body, html{
-    height: 1300px;
+body {
+    margin: auto;
+    margin-top: 8.875px;
+    max-width: 880px;
 }
 #bottomLayer {
     background: url(old-newspaper-texture.jpg) no-repeat center;
-    height: 100%;
+    width: 880px;
     background-size: cover;
 }
 #firstLine {
@@ -21,12 +23,14 @@ body, html{
 }
 #secondLine {
     text-align: center;
+    width: 860px;
     font-family: 'UnifrakturCook', fantasy;
-    font-size: 120px; 
+    font-size: 50px; 
     text-decoration: underline;
     opacity: .85;
 }
 #volDiv {
+    text-decoration: underline;
     text-align: center;
     opacity: .9;
 }
@@ -37,23 +41,61 @@ body, html{
 #headLine {
     text-align: center;
     font-family: 'Rye', cursive;
-    font-size: 130px;
+    font-size: 100px;
     font-weight: 300;
     opacity: .875;
 }
 #hopelessLine {
     text-align: center;
+    font-family: 'Bungee Inline', cursive;
+    font-size: 30px;
+    opacity: .88;
 }
 #lifeLine {
     text-align: center;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 28px;
+    opacity: .89;
 }
 #lincolnEdit {
     opacity: 1;
     text-align: center;
+    width: 860px;
+}
+#lincolnPic{
+    width: 90%;
+    opacity: .999;
+}
+#sectionOne {
+    text-align: center;
 }
 #parContent {
-    text-align: center;
-    font-size: 30px;
-    max-width: 100%;    
+    display: inline-block;
+    margin: 10px;
+    width: 230px;
+    text-align: left;
+    font-size: 12px;
+    text-indent: 10px;
+}
+#parContentTwo {
+    display: inline-block;
+    margin: 10px;
+    width: 230px;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 10px;
+}
+#parContentThree {
+    display: inline-block;
+    margin: 10px;
+    width: 230px;
+    font-size: 12px;
+    text-align: left;
+    text-indent: 10px;
+}
+h6 {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    width: 200px;
 }
