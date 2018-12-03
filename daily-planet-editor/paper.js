@@ -9,9 +9,9 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
-var Enemies= ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"]
+var Enemies= ["Lex", "Batman", "Darkseid", "Brainiac", "General Zod", "Doomsday"]
 
-function whoWins(isThereKryptonite,enemyName) {
+function whoWins(isThereKryptonite, enemyName) {
     if (!isThereKryptonite) {
     return "Superman beats" + enemyName + ", of course";
 }   else {
@@ -25,16 +25,16 @@ for (var i = 0; i < enemies.length; i++)
     } else {
         isThereKryptonite = false;
     }
-    console.log(whoWins(isThereKryptonite,enemies[i]));
+    console.log(whoWins(isThereKryptonite, enemies[i]));
 }}
 
-function howAttractedIsLoisLaneToMe ()
+function howAttractedIsLoisLaneToMe()
 {
     // 1 is not at all attracted, 10 is "super" attracted...
-    return Math.floor((Math.random()*10)+1);
+    return Math.floor((Math.random() * 10) + 1);
 }
 
-console.log(howAttractedIsLoisLaneToMe ()) ;
+console.log(howAttractedIsLoisLaneToMe());
 
 var clarkKent = true;
 var superman = false;
@@ -46,3 +46,4 @@ while (clarkKent) {
         clarkKent=false;
         superman=true;
         console.log("Now I'm Superman!");}}
+        
