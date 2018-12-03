@@ -9,6 +9,17 @@ just fix the existing ones.
 
 // Written by Kent, Clark
 
+/* 
+================================================================================================================
+Eric here: Hey Mikey, your camel casing looks great. I see you've put some good spacing in as well. 
+
+For every line, you need to go through more thouroughly and make sure: 
+
+every variable name is camel cased
+operators (*, +, =, >, <, %) have spaces on either side
+lines are properly indented and curly braces are in the correct places. You may need to look up a few examples or ask about this.
+================================================================================================================
+*/
 var Enemies= ["Lex","Batman","Darkseid","Brainiac","General Zod","Doomsday"]
 
 function whoWins(isThereKryptonite,enemyName) {
