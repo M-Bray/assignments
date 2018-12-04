@@ -80,3 +80,30 @@
     height: 240px;
     width: 80px;
 }
+.swedeFlag {
+    position: relative;
+    margin: 5px;
+    height: 250px;
+    width: 400px;
+    background-color: #006aa7;
+}
+.swedeCross {}
+    
+#vertLine {
+    height: 250px;
+    width: 40px;
+    top: 50%;
+    left: 40%;
+    position: absolute;
+    transform: translate( -50%, -50%);
+    background-color: #fecc00;
+}
+#horizLine {
+    height: 15%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate( -50%, -50%);
+    background-color: #fecc00;
+}
