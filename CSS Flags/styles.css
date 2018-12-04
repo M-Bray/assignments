@@ -1,0 +1,58 @@
+* {
+    margin: -2px;
+}
+.flag {
+    width: 400px;
+    height: 250px;
+}
+.franceBox {
+    width: 33.33333333333%;
+    height: 250px;
+    display: inline-block
+}
+#blue {
+    background-color: blue;
+}
+#white {
+    background-color: whitesmoke;
+}
+#red {
+    background-color: red;
+}
+.germanBox {
+    width: 400px;
+    height: 33.3333333%;
+    display: inline-block;
+}
+#black {
+    background-color: black;
+}
+#maroon {
+    background-color: maroon;
+}
+#gold {
+    background-color: goldenrod;
+}
+.madagascarBoxA {
+    width: 33.33333333333%;
+    height: 250px;
+    display: inline-block;
+}
+#madRightCol {
+    height: 100%;
+    width: 66.6666666666%;
+    display: inline-block;
+}
+.madagascarBoxB {
+    width: 100%;
+    height: 50%;    
+}
+#whiteA {
+    background-color: whitesmoke;
+}
+#redA {
+    background-color: red;
+}
+#greenA {
+    background-color: green;
+}
