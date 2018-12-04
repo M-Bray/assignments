@@ -1,14 +1,15 @@
 * {
-    margin: -2px;
+    font-size: 0px;
 }
 .flag {
+    margin: 5px;
     width: 400px;
     height: 250px;
 }
 .franceBox {
-    width: 33.33333333333%;
-    height: 250px;
-    display: inline-block
+    width: 33.333333333%;
+    height: 100%;
+    display: inline-block;
 }
 #blue {
     background-color: blue;
@@ -21,7 +22,7 @@
 }
 .germanBox {
     width: 400px;
-    height: 33.3333333%;
+    height: 33.333333333%;
     display: inline-block;
 }
 #black {
@@ -34,18 +35,19 @@
     background-color: goldenrod;
 }
 .madagascarBoxA {
-    width: 33.33333333333%;
-    height: 250px;
+    width: 33.333333333%;
+    height: 100%;
     display: inline-block;
 }
 #madRightCol {
     height: 100%;
-    width: 66.6666666666%;
+    width: 66.666666666%;
     display: inline-block;
 }
 .madagascarBoxB {
     width: 100%;
-    height: 50%;    
+    height: 50%; 
+    display:inline-block;   
 }
 #whiteA {
     background-color: whitesmoke;
@@ -55,4 +57,26 @@
 }
 #greenA {
     background-color: green;
+}
+.switzFlag {
+    position: relative;
+    margin: 5px;
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+.plusSign {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate( -50%, -50%);  
+    background-color: whitesmoke;
+}
+#horizontalRec {
+    height: 80px;
+    width: 240px;
+}
+#verticalRec {
+    height: 240px;
+    width: 80px;
 }
