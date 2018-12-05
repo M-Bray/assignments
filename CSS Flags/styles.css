@@ -86,9 +86,7 @@
     height: 250px;
     width: 400px;
     background-color: #006aa7;
-}
-.swedeCross {}
-    
+}    
 #vertLine {
     height: 250px;
     width: 40px;
@@ -106,4 +104,13 @@
     position: absolute;
     transform: translate( -50%, -50%);
     background-color: #fecc00;
+}
+#redB {
+    background-color: #ce1126; 
+}
+#blueB {
+    background-color: #0C1C8C; 
+} 
+#greenB {
+    background-color: #3A7728;
 }
