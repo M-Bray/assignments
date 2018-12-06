@@ -44,7 +44,7 @@ body {
 button {
     padding: 15px;
     font-size: 30px;
-    color: indigo
+    color: indigo;
     border-radius: 2px;
     background-color: black, transparent;
     opacity: .5;
