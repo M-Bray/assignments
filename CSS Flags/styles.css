@@ -114,3 +114,17 @@
 #greenB {
     background-color: #3A7728;
 }
+#whiteStripeUp {
+    height: 22.222px;
+    width: 400px; 
+    background-color: whitesmoke;  
+    position: absolute; 
+ 
+    
+}
+#whiteStripeDown {
+    background-color: whitesmoke;
+    height: 22.2px;
+    width: 400px;
+    position: absolute;
+}
