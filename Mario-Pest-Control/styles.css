@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+#dkHeader {
+    margin: auto;
+    height: 302px;
+    width: 750px;
+}
+#dkImg {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border: 1px solid rgb(26, 13, 13);
+    background-position: center;
+    display: inline-block;
+}
+body {
+    width: 100%;
+    height: 1000px;
+    background-color: grey;
+}
+.dkBlock {
+    margin: auto;
+    width: 750px;
+    height: 100%;
+    background-color: whitesmoke;
+}
+#kritter {
+    margin: auto;
+    width: 105px;
+    height: 105px;
+}
+.dkInput {
+    margin: auto;
+    font-size: 20px;
+    
+}
