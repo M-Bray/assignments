@@ -83,13 +83,16 @@ body {
 }
 #payBox {
     margin: auto;
-    width: 200px;
+    width: 355px;
     height: 100px;
     display: inline-block;
     position: absolute;
-    left: 865px;
+    left: 720px;
     top: 350px;
+    text-align: center;
     font-size: 30px;
+    border-radius: 20px;
+    color: #000000;
     background-color: #f05a15;
 }
 /* .dkImg {
@@ -103,7 +106,7 @@ body {
     width: 40px;
     font-size: 30px;
     opacity: 0.5;
-    color: #ccffde;
+    color: #000000;
     border-color: #006622;
 }
 .divChild {
@@ -126,12 +129,15 @@ p {
 }
 #totalButton {
     margin: auto;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    height: 40px;
     display: inline-block;
     position: absolute;
-    left: 865px;
-    top: 460px;
-    font-size: 80px;
+    left: 750px;
+    top: 480px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 7px;
+    color: #000000;
     background-color: #f05a15;
 }
