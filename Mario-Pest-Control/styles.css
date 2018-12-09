@@ -81,6 +81,17 @@ body {
     margin: 15px;
     width: 100%;
 }
+#payBox {
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 865px;
+    top: 350px;
+    font-size: 30px;
+    background-color: #f05a15;
+}
 /* .dkImg {
     display: inline-block;
     margin: auto;
@@ -105,9 +116,22 @@ h1 {
 #dkFooter {
     margin: auto;
     width: 750px;
-    height: 20%;
-    font-size: 20px;
-    color: rgba(226, 151, 11, 0.959);
+    height: 100px;
     text-align: center;
-    background-color: #05642c8e
+    background-color: #05642c8e;
+}
+p {
+    font-size: 20px;
+    color: rgb(241, 238, 232);
+}
+#totalButton {
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    left: 865px;
+    top: 460px;
+    font-size: 80px;
+    background-color: #f05a15;
 }
