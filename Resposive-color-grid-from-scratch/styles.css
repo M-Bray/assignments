@@ -25,7 +25,35 @@
 #orange {
     background-color: #E76E34;
 }
-
 @media (min-width: 768px){
-        
+    #pink {
+        display: inline-block;
+        margin: 10px;
+        height: 115px;
+        width: 860px;
+    }
+    #magenta {
+        display: inline-block;
+        margin: 10px;
+        height: 115px;
+        width: 200px;
+    }  
+    #lightBlue {
+        display: inline-block;
+        margin: 10px;
+        height: 115px;
+        width: 420px;
+    }   
+    #lightGreen {
+        display: inline-block;
+        margin: 10px;
+        height: 115px;
+        width: 630px;
+    }   
+    #orange {
+        display: inline-block;
+        margin: 10px;
+        height: 115px;
+        width: 210px;
+    }
 }
