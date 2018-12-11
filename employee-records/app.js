@@ -8,14 +8,14 @@ function Employee(name, jobTitle, salary, status) {
     this.status = "Full-Time";
 }
 function printEmployeeForm(){
-    console.log(this)
+    console.log("\nMy name is " + this.name + "\nI am a " + this.jobTitle + "\nI make " + this.salary + "per hour" + "\nI work " + this.status)
 }
 Employee.prototype.printEmployeeForm = printEmployeeForm;
 // then we "instantiate" (create a new object from) our constructor with the "new" keyword and pass in the parameters:
-var mikey = new Employee("Mikey", "Lord", "$Infinite/life");
-var mark = new Employee("Mark", "Instructor", "$8/hr");
-var ben = new Employee("Ben", "VSchool Lord", "$666/hr");
-var eric = new Employee("Eric", "VSchool Lord", "$666/hr",);
+var mikey = new Employee("Mikey", "Lord", "$(INSANE AMOUNT)$ ");
+var mark = new Employee("Mark", "Instructor", "$8 ");
+var ben = new Employee("Ben", "VSchool Lord", "$666 ");
+var eric = new Employee("Eric", "VSchool Lord", "$666 ",);
 
 eric.status = "Part-Time";
 
