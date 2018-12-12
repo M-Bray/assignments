@@ -37,7 +37,7 @@ body {
 #age {
     width: 80px;
 }
-#genderMale, #genderFemale {
+#gender, #gender {
     font-size: 5px;
     margin: 24px;
     top: -117px;

@@ -40,14 +40,11 @@ form.addEventListener("submit", function(e){
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
     var age = document.getElementById("age").value;
-    var male = document.getElementById("genderMale").value;
-    var female = document.getElementById("genderFemale").value;
-    
+    var gender = form.gender.value;
+   
     console.log("First Name: " + firstName);
     console.log("Last Name: " + lastName);
     console.log("Age: " + age);
-    console.log("Gender: " + male);
-    console.log("Gender: " + female);
-
+    console.log("Gender: " + gender);    
 })
 console.log(form);
