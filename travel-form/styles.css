@@ -4,6 +4,13 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#topHeader {
+    position: relative;
+    font-size: 80px;
+    top: 29px;
+    left: 36px;
+    color: #dbdee0;
+}
 .divOne {
     margin: auto;
     width: 310px;
@@ -20,10 +27,10 @@ body {
     opacity: .6;  
 }
 .personalInfo {
-    margin: 25px;
+    margin: 18px;
     width: 80%;
-    height: 33px;
-    font-size: 30px;
+    height: 25px;
+    font-size: 22px;
     position: relative;
     border-radius: 2px;
 }
@@ -33,7 +40,7 @@ body {
 #gender {
     font-size: 5px;
     margin: 24px;
-    top: -133px;
+    top: -117px;
     left: 62px;
     position: relative;
 }
@@ -41,11 +48,31 @@ body {
     font-size: 26px;
     padding: 5px;
     /* background-color: brown; */
-    color: whitesmoke;
+    color: rgb(192, 194, 228);
     width: auto;
     position: relative;
-    top: -170px;
+    top: -152px;
     left: 172px;
     display: inline-block;
     border-radius: 2px;
+}
+#dateOfDeparture {
+    font-size: 24px;
+    bottom: 184px;
+    border-radius: 2px;
+}
+#destination {
+    bottom: 211px;
+}
+#submitForm {
+    bottom: 135px;
+    font-size: 22px;
+}
+.dietInfo {
+    bottom: 50px;
+}
+#moonRegion {
+    bottom: 201px;
+    font-size: 23px;
+    height: 32px;
 }

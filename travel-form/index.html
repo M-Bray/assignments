@@ -8,16 +8,33 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
+    <header id="topHeader">Moon Adventure Airlines</header>
     <div class="divOne">
         <form id="application">
-            <input class="personalInfo" placeholder="First Name" type="text"/>
-            <input class="personalInfo" placeholder="Last Name" type="text"/>
+            <input class="personalInfo" id="firstName" placeholder="First Name" type="text"/>
+            <input class="personalInfo" id="lastName" placeholder="Last Name" type="text"/>
             <input class="personalInfo" id="age" placeholder="Age" type="number"/>
             
-            <div>
+            <div id="genderDiv">
                 <h5 id="genderHeader"><pre>M   F</pre></h5>
                 <input id="gender" type="radio"/>
                 <input id="gender" type="radio"/>
+            </div>
+            <div id="infoDiv">
+                <input class="personalInfo" id="dateOfDeparture" type="date"/>
+                <select class="personalInfo" id="moonRegion">
+                    <option value="Tycho">Tycho</option>
+                    <option value="Mare-Nectaris">Mare Nectaris</option>
+                    <option value="Copernicus">Copernicus</option>
+                </select>
+            </div>    
+            <div id="diet">
+                <input class="dietInfo" id="plantBased" placeholder="Vegetarian" type="checkbox"/>
+                <input class="dietInfo" id="meat" placeholder="Vegetarian" type="checkbox"/>
+                <input class="dietInfo" id="glutenFree" placeholder="Vegetarian" type="checkbox"/>
+            </div>
+            <div>
+                <input class="personalInfo" id="submitForm" type="submit"/>
             </div>
                 <!--first name 
                         last name
