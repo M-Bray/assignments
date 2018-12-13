@@ -1,20 +1,12 @@
 var rs = require("readline-sync");
-//FUCTIONAL LOGIC\\
-function Player(name){
+var gameOver = false;
+var magicSpheres = ["Blue Orb of Tidal Destruction", "Green Orb of Entangling Constriction","Yellow Orb of Delusional Confusion"]
+function Player (name, hp, magicSpheres){
     this.name = name;
-    this.hp = 100;
-    this.inventory = [];
-    this.enemiesKilled = 0;
+    this.hp = hp;
+    this.magicSpheres = [];
+    this.attack = function(){
+        return Math.floor(Math.random()*3)
+    }
 }
-
-
-//GameLogic\\
-var name = rs.question("Who are You?!!?\n");
-var player = new Player(name);
-
-//PROMP USER FOR NAME AND INFO
-
-
-while(true) {
-
-}
+var player1 = new Player("Wizard", 10git)
