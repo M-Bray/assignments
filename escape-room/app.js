@@ -21,3 +21,4 @@ while(isAlive && hasEscaped === false) {
         console.log("Is You CRAZY!?")
     }
 };
+
