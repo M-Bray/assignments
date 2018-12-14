@@ -32,29 +32,17 @@ function Enemy(name, hp,){
 
 
 
-
-
-
-
-//\\\\\///\\//\\//\\/\\/\/\/\/\/\/\/\/\//\/\/\\\
-
 var name = rs.question("What is Your Name?, Child of the Great Spirit.\n");
 var player1 = new Player(name);
 while (true) {
-    var isWalking = rs.keyInYN("Welcome " + name + "\nWould you like to start Walking? \n");
-    if (action === "W"){
-        console.log("Dangers Await you on your Journey Young ")
-    }
-    
-    
-    
+    var isWalking = rs.keyInYN("Welcome " + name + "\nWould you like to start Walking? \n");            
     if (isWalking) {   
         var encountersEnemy = Math.random() < .3333333;
         if (encountersEnemy) {
             var enemy = new Enemy();
             console.log("you encountered a" + enemy.name + "!");
             var fight = rs.keyInYN("Stand and Fight? \n")
-            if (fight = "y") {
+            if (fight) {
                 while (true) {
                     if (player1.hp <= 0) {
                         console.log("You have Died")
@@ -68,6 +56,8 @@ while (true) {
                 //check which one died
                     //if player dead --> Break
                     //if Enemy is dead --> move enemy item to inventory, increase
+            } else {
+                player1.hp = player1.hp - Math.floor(Math.random() * 8);
             }
         }
     }
