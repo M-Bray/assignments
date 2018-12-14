@@ -3,10 +3,8 @@
 
 var rs = require("readline-sync");
 var gameOver = false;
-
-
 var enemyTypes = ["a Dark Elf", "a Wicked Witch", "a Grimey Goblin"]
-var magicSpheres = ["Blue Sphere of Tidal Destruction", "Green Sphere of Entangling Constriction", "Yellow Sphere of Delusional Confusion"];
+var magicSpheres = ["Blue Sphere of Tidal Destruction", "Green Sphere of Entangling Constriction", "Yellow Sphere of Delusional Confusion"]; 
 
 function attack(character) {
     var damage = Math.floor(Math.random() * 47);
@@ -18,10 +16,13 @@ function Player (name, hp, magicSpheres){
     this.magicSpheres = [];  
 }
 Player.prototype.attack = attack;
+Enemy.prototype.attack = attack;
 function getRandomElement(arr) {
     var index = Math.floor(Math.random() * arr.length)
     return arr[index]
 }
+
+
 function Enemy(name, hp,){
     this.name = getRandomElement(enemyTypes);
     this.hp = Math.floor(Math.random() * 31) + 50 ;
@@ -29,11 +30,25 @@ function Enemy(name, hp,){
 }
 //GAME LOOP\\
 
+
+
+
+
+
+
+//\\\\\///\\//\\//\\/\\/\/\/\/\/\/\/\/\//\/\/\\\
+
 var name = rs.question("What is Your Name?, Child of the Great Spirit.\n");
 var player1 = new Player(name);
 while (true) {
-    var isWalking = rs.keyInYN("would you like to start Walking? \n");
-    if (isWalking) {
+    var isWalking = rs.keyInYN("Welcome " + name + "\nWould you like to start Walking? \n");
+    if (action === "W"){
+        console.log("Dangers Await you on your Journey Young ")
+    }
+    
+    
+    
+    if (isWalking) {   
         var encountersEnemy = Math.random() < .3333333;
         if (encountersEnemy) {
             var enemy = new Enemy();
@@ -45,8 +60,8 @@ while (true) {
                         console.log("You have Died")
                         gameOver = true;
                     }
-                    player1.attack();
-                    enemy.attack();
+                    player1.attack(enemy);
+                    enemy.attack(player1);
                 }
                 //handle fight sequence
                 //use while loop to iterate until either the enemy hp or player hp is <= 0 
@@ -56,11 +71,4 @@ while (true) {
             }
         }
     }
-}
-
-
-
-
-for(i = 0; i < matrix.length; i++){
-    if matrix
 }
