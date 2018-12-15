@@ -10,7 +10,7 @@ function attack(character) {
     var damage = Math.floor(Math.random() * 47);
     character.hp -= damage;
 }
-function Player (name, hp, magicSpheres){
+function Player (name, hp){
     this.name = name;
     this.hp = hp;
     this.magicSpheres = [];  
@@ -23,7 +23,7 @@ function getRandomElement(arr) {
 }
 
 
-function Enemy(name, hp,){
+function Enemy(name){
     this.name = getRandomElement(enemyTypes);
     this.hp = Math.floor(Math.random() * 31) + 50 ;
     this.magicSpheres = getRandomElement(magicSpheres);
@@ -33,23 +33,26 @@ function Enemy(name, hp,){
 
 
 var name = rs.question("What is Your Name?, Child of the Great Spirit.\n");
-var player1 = new Player(name);
+var player1 = new Player(name, 40);
 while (true) {
     var isWalking = rs.keyInYN("Welcome " + name + "\nWould you like to start Walking? \n");            
-    if (isWalking) {   
+    if (isWalking) {  
         var encountersEnemy = Math.random() < .3333333;
         if (encountersEnemy) {
             var enemy = new Enemy();
-            console.log("you encountered a" + enemy.name + "!");
+            console.log("you encountered " + enemy.name + "!");
             var fight = rs.keyInYN("Stand and Fight? \n")
             if (fight) {
                 while (true) {
                     if (player1.hp <= 0) {
                         console.log("You have Died")
                         gameOver = true;
+                        return;
                     }
                     player1.attack(enemy);
                     enemy.attack(player1);
+                    console.log(enemy.hp)
+                    console.log(player1.hp)
                 }
                 //handle fight sequence
                 //use while loop to iterate until either the enemy hp or player hp is <= 0 
