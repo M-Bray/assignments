@@ -1,0 +1,34 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr;
+    grid-gap: 50px 10px;
+}
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #0e2f2b;
+}
+
+html, body {
+  background-color: #000000;
+  margin: 10px;
+}
+
+.container > div:nth-child(1n) {
+  background-color: #af0e0e;	
+}
+
+.container > div:nth-child(3n) {
+  background-color: #1215b3;
+}
+
+.container > div:nth-child(2n) {
+      background-color: #ecc30d;
+}
+
+.container > div:nth-child(4n) {
+      background-color: #52167a;
+}
