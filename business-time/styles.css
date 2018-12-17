@@ -1,53 +1,91 @@
 * {
     box-sizing: border-box;
 }
+#siteWrapper {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 2398px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: auto;
+}
 #bodId {
-    font-family: Verdana;
-    color: #aaaaaa;
+    background:url("dark-dusk-evening-934964.jpg") no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #daa78f;
 }
 #divHeader {
-    background-color: #e5e5e5;
+    width: 100%;
+    height: 110px;
+    background-color: #d6181824;
     padding: 15px;
     text-align: center;
+    z-index: 1;
 }
 #container {
+    height: 2220px;
+    margin-top: 22px;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
     overflow: auto;
 }
-.menu {   
+.menu {
     float: left;
-    width: 20%;
+    width: 33%;
     text-align: center;
 }
-.menu a {
-    background-color: #e5e5e5;
+.instrumentDiv {
+    background-color: #d6181824;
     padding: 8px;
     margin-top: 7px;
     display: block;
+    height: 700px;
     width: 100%;
-    color :black;
+    color: black;
+    font-size: 270%;   
 }
+#guitarImg {
+    width: 100px;
+}
+#harmonicaImg {
+    width: 100px;
+}
+#djembeImg {
+    width: 100px;
+}
+#didgeImg {
+    width: 100px;
+}
+
 .main {
     float: left;
-    width: 60%;
-    padding: 0 20px;
+    text-align: center;
+    width: 33%;
+    height: 60%;
+    margin-top: 7px;
+    margin-left: 11px;
+    padding: 7px;
+    background-color: #d6181824;
 }
 .right {
-    background-color: #e5e5e5;
-    float: left;
-    width: 20%;
-    padding: 15px;
+    background-color: #d6181824;
+    float: right;
+    width: 33%;
+    padding: 7px;
     margin-top: 7px;
     text-align: center;
 }
-#footer{
-    background-color: #e5e5e5;
+#footer {
+    background-color: #d6181824;
     text-align: center;
     padding: 10px;
     margin-top: 7px;
 }
-
+/* MOBILE */
 @media only screen and (max-width:620px) {
-    /* For mobile phones: */
     .menu, .main, .right {
     width: 100%;
     }
