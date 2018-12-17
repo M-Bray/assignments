@@ -1,6 +1,15 @@
 * {
     box-sizing: border-box;
 }
+h1 {
+    color: rgb(185, 180, 180);
+}
+h2 {
+    color: rgb(185, 180, 180);
+}
+p {
+    color: rgb(185, 180, 180);
+}
 #siteWrapper {
     perspective: 1px;
     transform-style: preserve-3d;
@@ -42,22 +51,22 @@
     padding: 8px;
     margin-top: 7px;
     display: block;
-    height: 700px;
-    width: 100%;
-    color: black;
-    font-size: 270%;   
+    height: 609px;
+    width: 61%;
+    color: rgb(185, 180, 180);
+    font-size: 270%;
 }
 #guitarImg {
-    width: 100px;
+    width: 231px;
 }
 #harmonicaImg {
-    width: 100px;
+    width: 322px;
 }
 #djembeImg {
-    width: 100px;
+    width: 190px;
 }
 #didgeImg {
-    width: 100px;
+    width: 290px;
 }
 
 .main {
