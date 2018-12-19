@@ -72,30 +72,3 @@
 
 
 
-function getAllTodos(url) {
-    return axios.get(url).then(response => response.data)
-}
-
-function renderTodo(todo) {
-
-    //Create Elements
-    const li = document.createElement("li");
-    const title = document.createElement("h3");
-    const description = document.createElement("p");
-    const price = document.createElement("p");
-    const completed = document.createElement("input");
-}
-//modify
-
-//append to the DOM
-ul.appendChild(li);
-[li, title, description price, completed].forEach(el => li.appendChild(el));
-
-
-
-
-
-
-
-//SETTING HEX CODES FOR COLOR BLIND\CONTRAST\\
-// ARIA FOR COMPLETELY BLIND\\
