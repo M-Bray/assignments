@@ -50,17 +50,52 @@
 // // object.getThis();
 // object.nested.getThis();
 
-const person = {
-    name: "Swanson McKringleberry",
-    clothes: ["socks", "shoes", "shirt"],
-    getDressed: function () {
-        const self = this;
-        this.clothes.forEach(function (article) {
-            self.currentlyWearing.push(article)
-        });
-        console.log(this.currentlyWearing);
-    },
-    currentlyWearing: []
+// const person = {
+//     name: "Swanson McKringleberry",
+//     clothes: ["socks", "shoes", "shirt"],
+//     getDressed: function () {
+//         const self = this;
+//         this.clothes.forEach(function (article) {
+//             self.currentlyWearing.push(article)
+//         });
+//         console.log(this.currentlyWearing);
+//     },
+//     currentlyWearing: []
+// }
+
+// person.getDressed();
+
+
+
+
+
+
+
+
+function getAllTodos(url) {
+    return axios.get(url).then(response => response.data)
 }
 
-person.getDressed();
+function renderTodo(todo) {
+
+    //Create Elements
+    const li = document.createElement("li");
+    const title = document.createElement("h3");
+    const description = document.createElement("p");
+    const price = document.createElement("p");
+    const completed = document.createElement("input");
+}
+//modify
+
+//append to the DOM
+ul.appendChild(li);
+[li, title, description price, completed].forEach(el => li.appendChild(el));
+
+
+
+
+
+
+
+//SETTING HEX CODES FOR COLOR BLIND\CONTRAST\\
+// ARIA FOR COMPLETELY BLIND\\
