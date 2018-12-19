@@ -51,11 +51,12 @@
 // object.nested.getThis();
 
 const person = {
-    name: "",
+    name: "Swanson McKringleberry",
     clothes: ["socks", "shoes", "shirt"],
     getDressed: function () {
+        const self = this;
         this.clothes.forEach(function (article) {
-            this.currentlyWearing.push(article)
+            self.currentlyWearing.push(article)
         });
         console.log(this.currentlyWearing);
     },
