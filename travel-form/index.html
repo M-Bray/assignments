@@ -8,41 +8,42 @@
     <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-    <header id="topHeader">Moon Adventure Airlines</header>
-    <div class="divOne">
-        <form id="application">
-            <input class="personalInfo" id="firstName" placeholder="First Name" type="text"/>
-            <input class="personalInfo" id="lastName" placeholder="Last Name" type="text"/>
-            <input class="personalInfo" id="age" placeholder="Age" type="number"/>
-            
-            <div id="genderDiv">
-                <h5 id="genderHeader"><pre>M   F</pre></h5>
-                <input name="gender" type="radio" id="gender" value="Male" checked/>
-                <input name="gender" type="radio" id="gender" value="Female"/>
-            </div>
-            <div id="infoDiv">
-                <input class="personalInfo" id="dateOfDeparture" type="date"/>
-                <select class="personalInfo" id="moonRegion">
-                    <option value="Tycho">Tycho</option>
-                    <option value="Mare-Nectaris">Mare Nectaris</option>
-                    <option value="Copernicus">Copernicus</option>
-                </select>
-            </div>    
-            <div id="diet">
-                <input class="dietInfo" id="plantBased" placeholder="Vegetarian" type="checkbox"/>
-                <input class="dietInfo" id="meat" placeholder="Vegetarian" type="checkbox"/>
-                <input class="dietInfo" id="glutenFree" placeholder="Vegetarian" type="checkbox"/>
-            </div>
-            <div>
-                <input class="personalInfo" id="submitForm" type="submit"/>
-            </div>
-                <!--first name 
-                        last name
-                        age     -->
-
-        </form>
+    <div id="siteWrap">
+        <header id="topHeader">Moon Adventure Airlines</header>
+        <div class="divOne">
+            <form id="application">
+                <input class="personalInfo" id="firstName" placeholder="First Name" type="text"/>
+                <input class="personalInfo" id="lastName" placeholder="Last Name" type="text"/>
+                <input class="personalInfo" id="age" placeholder="Age" type="number"/>
+                
+                <div id="genderDiv">
+                    <h5 id="genderHeader"><pre>M   F</pre></h5>
+                    <input name="gender" type="radio" id="gender" value="Male" checked/>
+                    <input name="gender" type="radio" id="gender" value="Female"/>
+                </div>
+                <div id="infoDiv">
+                    <input class="personalInfo" id="dateOfDeparture" type="date"/>
+                    <select class="personalInfo" id="moonRegion">
+                        <option value="Tycho">Tycho</option>
+                        <option value="Mare-Nectaris">Mare Nectaris</option>
+                        <option value="Copernicus">Copernicus</option>
+                    </select>
+                </div>    
+                <div id="diet">
+                    <input class="dietInfo" id="plantBased" placeholder="Veggy" type="checkbox"/>
+                    <input class="dietInfo" id="meat" placeholder="Meat" type="checkbox"/>
+                    <input class="dietInfo" id="glutenFree" placeholder="GF" type="checkbox"/>
+                </div>
+                <div>
+                    <input class="personalInfo" id="submitForm" type="submit"/>
+                </div>
+                    <!--first name 
+                            last name
+                            age     -->
+            </form>
+            <footer> ∞ </footer>
+        </div>
     </div>
-    
 </body>
 <script src="app.js"></script>
 </html>

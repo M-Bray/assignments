@@ -1,13 +1,21 @@
 body {
+    grid-area: b;
+}
+#siteWrap {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background: url("moon-airlines.jpg") center center;
+    max-height: 100vh;
+    grid-template-areas: 
+    "h h h h h h h h h h h h" 
+    "d b b b b b b b b b b b"
+    "f f f f f f f f f f f f";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    background: url(moon-airlines.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 #topHeader {
+    grid-area: h;
     position: relative;
     font-size: 80px;
     top: 29px;
@@ -15,14 +23,22 @@ body {
     color: #dbdee0;
 }
 .divOne {
+    grid-area: d;
+    padding-left: 30px;
+
+    /* grid-template-areas: 
+        "PErsonal info, genderDiv, infoDiv, diet"
     margin: auto;
     width: 310px;
-    height: 483px;
-    position: relative;
-    right: 505px;
-    top: 172px;
+    height: 483px; */
+
+    /* right: 505px;
+    top: 172px; */
 }
 #application {
+    padding-top: 20px;
+    padding-left: 20px;
+    grid-area: a;
     width: 100%;
     height: 100%;
     background-color: #385264;
@@ -71,11 +87,14 @@ body {
     bottom: 135px;
     font-size: 22px;
 }
-.dietInfo {
-    bottom: 50px;
+#diet {
+
 }
 #moonRegion {
     bottom: 201px;
     font-size: 23px;
     height: 32px;
+}
+footer {
+    grid-area: f;
 }
