@@ -6,10 +6,10 @@ body {
     max-height: 100vh;
     grid-template-areas: 
     "h h h h h h h h h h h h" 
-    "d b b b b b b b b b b b"
+    ". . d d b b b b b b b b"
     "f f f f f f f f f f f f";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     background: url(moon-airlines.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -18,14 +18,10 @@ body {
     grid-area: h;
     position: relative;
     font-size: 80px;
-    top: 29px;
-    left: 36px;
     color: #dbdee0;
 }
 .divOne {
     grid-area: d;
-    padding-left: 30px;
-
     /* grid-template-areas: 
         "PErsonal info, genderDiv, infoDiv, diet"
     margin: auto;
@@ -36,8 +32,7 @@ body {
     top: 172px; */
 }
 #application {
-    padding-top: 20px;
-    padding-left: 20px;
+
     grid-area: a;
     width: 100%;
     height: 100%;
@@ -46,7 +41,6 @@ body {
     opacity: .6;  
 }
 .personalInfo {
-    margin: 18px;
     width: 80%;
     height: 25px;
     font-size: 22px;
@@ -56,42 +50,35 @@ body {
 #age {
     width: 80px;
 }
+pre {
+    margin: 0px;
+    padding: 0px;
+}
 #gender, #gender {
     font-size: 5px;
-    margin: 24px;
-    top: -117px;
-    left: 62px;
     position: relative;
 }
 #genderHeader {
     font-size: 26px;
-    padding: 5px;
     /* background-color: brown; */
     color: rgb(192, 194, 228);
     width: auto;
     position: relative;
-    top: -152px;
-    left: 172px;
-    display: inline-block;
     border-radius: 2px;
 }
 #dateOfDeparture {
     font-size: 24px;
-    bottom: 184px;
     border-radius: 2px;
 }
 #destination {
-    bottom: 211px;
 }
 #submitForm {
-    bottom: 135px;
     font-size: 22px;
 }
 #diet {
 
 }
 #moonRegion {
-    bottom: 201px;
     font-size: 23px;
     height: 32px;
 }
