@@ -1,0 +1,65 @@
+body {
+    max-height: 100vh;
+    display: grid;
+    background-color: rgb(255, 252, 204);
+}
+.siteWrapper {
+    margin: auto;
+    display: grid;
+    height: 100vh;
+    width: 60vw;
+    grid-template-rows: 75px 60px 50px 300px 60px 30px;
+    grid-template-areas:  
+    "nb nb nb nb nb nb"
+    "fh fh fh fh fh fh"
+    "sh sh sh sh sh sh"
+    "cd cd cd cd cd cd"
+    ". . . . . ."
+    "fc fc fc fc fc fc";
+    background-color: rgba(3, 4, 7, 0.411);
+    background-position: auto;
+    border-radius: 3px;
+}
+/* NAVBAR */
+.navBar {
+    grid-area: nb;
+    font-size: 2vh;
+    height: 15vh;
+    /* float: left; */
+    background-color: rgba(0, 0, 0, 0.411);
+    background-size: auto;
+    border-radius: 3px
+}
+.navBar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 3px;
+    margin-left: 3%;   
+    margin-top: 4%;
+}
+.navBar a:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+}
+/* HEADERS */
+.firstHeader {
+    grid-area: fh;
+    text-align: center;
+}
+.secondHeader {
+    grid-area: sh;
+    text-align: center;
+}
+/* SHOWCASE DIV */
+.carDivs {
+    grid-area: cd;
+}
+/* FOOTER */
+.footerClass {
+    grid-area: fc;
+}
+
+/* display: none;
+position: absolute; */
