@@ -1,34 +1,37 @@
 body {
     max-height: 100vh;
     display: grid;
-    background-color: rgb(255, 252, 204);
+    background: url(abstract-art-decoration-380337.jpg) center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(29, 68, 70, 0.52);
+    background-blend-mode: color-burn;
+    
 }
 .siteWrapper {
     margin: auto;
     display: grid;
     height: 100vh;
-    width: 60vw;
-    grid-template-rows: 75px 60px 50px 300px 60px 30px;
-    grid-template-areas:  
-    "nb nb nb nb nb nb"
-    "fh fh fh fh fh fh"
-    "sh sh sh sh sh sh"
+    width: 77vw;
+    grid-template-rows: auto 1fr 1fr 8fr 1fr auto;
+    grid-template-areas: 
+    "nb nb nb nb nb nb" 
+    "fh fh fh fh fh fh" 
+    "sh sh sh sh sh sh" 
     "cd cd cd cd cd cd"
-    ". . . . . ."
+    "cd cd cd cd cd cd" 
     "fc fc fc fc fc fc";
-    background-color: rgba(3, 4, 7, 0.411);
-    background-position: auto;
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0.83);
     border-radius: 3px;
 }
 /* NAVBAR */
 .navBar {
     grid-area: nb;
-    font-size: 2vh;
-    height: 15vh;
-    /* float: left; */
-    background-color: rgba(0, 0, 0, 0.411);
-    background-size: auto;
-    border-radius: 3px
+    font-size: .9em;
+    float: left;
+    background-color: rgba(1, 94, 85, 0.5);
+    box-shadow: 0 5px 7px 0 rgba(1, 94, 85, 0.48), 0 6px 20px 0 rgba(1, 48, 43, 0.219);
 }
 .navBar a {
     display: inline-block;
@@ -37,8 +40,9 @@ body {
     color: antiquewhite;
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 3px;
-    margin-left: 3%;   
-    margin-top: 4%;
+    margin: 5px;
+    /* margin-left: 3%;   
+    margin-top: 4%; */
 }
 .navBar a:hover {
     background-color: rgba(0, 0, 0, 0.452);
@@ -50,14 +54,55 @@ body {
 }
 .secondHeader {
     grid-area: sh;
+    padding: 14px;
     text-align: center;
+    border-top: 4px solid #133233;
+    border-bottom: 8px dashed #1c4840ab;
+    font-size: large;
 }
-/* SHOWCASE DIV */
-.carDivs {
+/* MAIN DIV */
+.mainDiv {
     grid-area: cd;
+    overflow: scroll
 }
+
+/* SHOWCASE DIV */
+.carDivs {   
+}
+
+/* IMAGES AND LINKS */
+.clickPic {
+    text-decoration: none;
+    color: blanchedalmond;
+    opacity: 1;
+}
+.clickPic:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+img {
+    display: block;
+    margin: auto;
+    width: 17%;
+}
+.picDescription {
+    background-color:rgba(7, 56, 56, 0.609);
+    font-size: 2em;
+    text-align: center; 
+    box-shadow: 0 4px 8px 0 rgba(1, 48, 43, 0.192), 0 6px 20px 0 rgba(1, 94, 85, 0.123);
+}
+
+
+
+
+
+
+
 /* FOOTER */
 .footerClass {
+    font-size: 5%;
+    text-align: right;
+    padding: 10px;
     grid-area: fc;
 }
 
