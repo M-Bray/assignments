@@ -1,0 +1,14 @@
+body {
+  background-color: blanchedalmond;
+  text-align: center;
+}
+h1 {
+  margin: auto;
+  color: darkolivegreen;
+  padding: 20px;
+  font-size: 33px;
+}
+img {
+  width: 400px;
+  padding: 20px
+}
