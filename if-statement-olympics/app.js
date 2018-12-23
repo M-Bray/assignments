@@ -5,9 +5,8 @@ if("cat".length === 3) {
     console.log("is the length")
 }
 if("cat" === "dog") {
-    } else {
-        console.log("not the same")
-    }
+    console.log("not the same")
+}
 
 for(var i = 0; i < 10; i++) {
     console.log(i)
