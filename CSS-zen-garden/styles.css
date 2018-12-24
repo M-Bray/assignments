@@ -1,0 +1,38 @@
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+  color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 70%;
+}
+
+
+
+/* HEADER TOP WRAP */
+@media only screen and (max-width: 1132px)
+header {
+    border-top: solid 10px rgba(19, 67, 71, 0.9);
+}
+
+@media only screen and (min-width: 1132px)
+header {
+    width: 100%;
+    height: 310px;
+    padding: 0 10%;
+    border-top: solid 12px rgba(19, 67, 71, 0.8);
+    box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.3);
+    vertical-align: middle;
+    text-align: left;
+}
+
+/* HEADER CONTENT */
+@media only screen and (min-width: 1132px)
+h1 {
+    display: inline-block;
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 60px 0 5px 0;
+}
