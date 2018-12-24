@@ -22,16 +22,15 @@ body {
 
 
 /* HEADER TOP WRAP */
-@media only screen and (max-width: 1132px)
-.headContain {
-    border-top: solid 10px rgba(19, 67, 71, 0.9);
+@media only screen and (max-width: 500px) {
+    h1 {
+        display: block;
+        left: 50%;
+        width: 50px;
+        height: 50px;
+        margin: 0 0 0 -25px;
+        padding: 0 0 35px 0;   
+        }
+    
 }
-
-/* HEADER CONTENT */
-@media only screen and (min-width: 1132px)
-h1 {
-    display: inline-block;
-    position: relative;
-    margin: 15px 0 0 0;
-    padding: 60px 0 5px 0;
-}
+  
