@@ -6,7 +6,7 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	}
+}
 body {
   color: #325050;
   background: #fff;
@@ -121,4 +121,66 @@ h1::before {
 /* NAV BAR  */
 nav {
   display: block;
+}
+
+
+@media only screen and (max-width: 500px) {
+  .design-archives {
+    top: 180px;
+  }
+}
+.design-archives {
+    position: absolute;
+    top: 160px;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(255,255,255,0.2);
+}
+
+
+
+.design-archives li.viewall {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 71px;
+  line-height: 50px;
+}
+.design-archives li {
+  position: absolute;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style: none;
+}
+@media only screen and (max-width: 1132px) {
+  p, li {
+    font-size: 1.2em;
+  }
+}
+
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+ul, menu, dir {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
 }
