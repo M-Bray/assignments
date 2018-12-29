@@ -121,6 +121,7 @@ h1::before {
 /* NAV BAR  */
 nav {
   display: block;
+  font-size:;
 }
 
 
@@ -160,21 +161,16 @@ nav {
     font-size: 1.2em;
   }
 }
-
-
 li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
-
-
 .sidebar ul {
   padding: 0;
   margin: 0;
   list-style: none;
   overflow: hidden;
 }
-
 ul, menu, dir {
   display: block;
   list-style-type: disc;
