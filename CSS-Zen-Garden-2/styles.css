@@ -1,3 +1,15 @@
 body {
   background: url(http://www.csszengarden.com/214/huntington.jpg);
 }
+h1 {
+  font-family: 'Julius Sans One', sans-serif;
+}
+h2 {
+  display: block;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  border-top: none;
+  color: rgba(255,255,255,0.6);
+  font-size: 1.6em;
+  font-style: italic;
+}
