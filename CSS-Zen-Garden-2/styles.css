@@ -12,12 +12,57 @@ html, body {
   margin: 0;
 }
 #wrap {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 260px 4fr 115px 1fr;
+  grid-template-areas: 
+  "tc"
+  "lc"; */
 }
 .topContent {
-  margin-top: 20px;
+  height: 240px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "tl"
+  "h1"
+  "h2"
+  "n";
+}
+nav {
+  grid-area: n;
+  font-size: 
+}
+ul {
+  height: 74px;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "prev va next"
+
+}
+li.viewAll a {
+  display: block;
+  margin-bottom: 0.25em;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.2em;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.next {
+  grid-area: next;
+}
+.previous {
+  grid-area: prev;
+}
+.viewAll {
+  align-self: center;
+  font-size: 14px;
+  grid-area: va;
 }
 header {
   background: #2d6360 50% 0 url(http://www.csszengarden.com/214/huntington.jpg) no-repeat;
@@ -31,6 +76,9 @@ header {
   text-align: center;
 }
 #topLogo {
+  align-self: flex-end;
+  justify-self: center;
+  grid-area: tl;
   display: inline-block;
   position: relative;
   /* top: 20px; */
@@ -43,6 +91,8 @@ header {
   opacity: 0.6;
 }
 h1, h2 {
+  align-self: top;
+  justify-self: center;
   padding: 0 10%;
   margin: 0;
   color: #fff;
@@ -70,6 +120,7 @@ h2 {
   font-style: italic;
 }
 .leftContent {
+  grid-area: lc;
   margin: 0 auto;
   width: 80%;
   padding-top: 2em;
@@ -87,4 +138,6 @@ h3 {
   font-weight: normal;
   text-transform: uppercase;
 }
-
+.rightContent {
+  grid-area: rc;
+}
