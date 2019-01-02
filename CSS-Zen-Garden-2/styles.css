@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
 }
+
 /* INHERIT BASE */
 body {
   color: #325050;
@@ -8,10 +9,12 @@ body {
   font-family: 'Libre Baskerville', sans-serif;
   font-size: 70%;
 }
+
 html, body {
   padding: 0;
   margin: 0;
 }
+
 #wrap {
   /* display: grid;
   grid-template-columns: 1fr;
@@ -20,6 +23,7 @@ html, body {
   "tc"
   "lc"; */
 }
+
 /* HEAD TOP SECTION */
 header {
   background: #2d6360 50% 0 url(http://www.csszengarden.com/214/huntington.jpg) no-repeat;
@@ -32,6 +36,7 @@ header {
   height: 250px;
   text-align: center;
 }
+
 #topLogo {
   margin-top: 22px;
   align-self: flex-end;
@@ -46,12 +51,14 @@ header {
   background-size: 100%;
   opacity: 0.6;
 }
+
 h1, h2 {
   justify-self: center;
   padding: 0 10%;
   margin: 0;
   font-weight: normal;
 }
+
 h1 {
   margin-top: 12px;
   padding: 0 0 35px 0;
@@ -64,6 +71,7 @@ h1 {
   font-size: 2.5em;
   color: whitesmoke;
 }
+
 h2 {
   display: block;
   padding-top: 5px;
@@ -73,6 +81,7 @@ h2 {
   font-size: 1.6em;
   font-style: italic;
 }
+
 .topContent {
   height: 240px;
   display: grid;
@@ -84,6 +93,7 @@ h2 {
   "h2"
   "db";
 }
+
 .designBank {
   display: grid;
   background: rgba(255,255,255,0.2);
@@ -93,6 +103,7 @@ h2 {
   grid-template-areas: 
   "n";
 }
+
 /* .designBank .previous a, .designBank .next a { */
   /* display: block;
   overflow: hidden;
@@ -102,6 +113,7 @@ h2 {
   text-decoration: none;
   white-space: nowrap;
 } */
+
 nav {
   display: grid;
   grid-area: n;
@@ -111,6 +123,7 @@ nav {
   grid-template-areas: 
   "ul";
 }
+
 ul {
   height: 74px;
   padding: 0;
@@ -122,6 +135,23 @@ ul {
   grid-template-areas: 
   "prev va next";
 }
+
+.next a {
+  color: rgba(255, 255, 255, 0.65);
+  text-decoration: none;
+  position: absolute;
+  width: 30px;
+  height: 70px;
+  text-align: center;
+  text-indent: 0;
+  font-size: 44px;
+  font-family: 'verdemoderna';
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 70px;
+  -webkit-font-smoothing: antialiased;
+}
+
 li.viewAll a {
   height: 70px;
   color: rgba(255, 255, 255, 0.65);
@@ -132,50 +162,68 @@ li.viewAll a {
   text-transform: uppercase;
   text-decoration: none;
 }
+
 a {
   transition: all 0.25s ease-out;
 }
-a:hover 
-{
+
+a:hover {
   cursor: pointer;
 }
+
 .previous, .next {
   left: 0;
   z-index: 3;
 }
+
 .next {
   grid-area: next;
   content: ">";
 }
+.nextButton {
+
+
+}
+
 .previous {
   grid-area: prev;
 }
+
 .viewAll {
   line-height: 50px;
   align-self: center;
   font-size: 14px;
   grid-area: va;
 }
+
 /* LEFT / MAIN CONTENT---- NEED TO SNAP exampleLinkP  */
 #exampleLinkP {
   
 }
+
 .leftContent {
   grid-area: lc;
-  margin: 0 auto;
-  width: 80%;
+  /* margin: 0 auto; */
   padding-top: 2em;
 }
-.left {
 
+.left {
+  
 }
+
 p {
   margin: 0.75em 0;
   line-height: 2;
 }
+
 p, li {
   font-size: 1.2em;
 }
+
+li {
+  list-style: none;
+}
+
 h3 {
   margin: 2em 0 0 0;
   color: #2e484c;
@@ -184,8 +232,10 @@ h3 {
   font-weight: normal;
   text-transform: uppercase;
 }
+
 div#leftBamboo {
 }
+
 #leftBamboo {
   background-attachment: scroll, scroll, fixed;
   background-color: rgba(138,188,159,0.5);
@@ -193,6 +243,7 @@ div#leftBamboo {
   background-repeat: repeat, repeat, no-repeat;
   background-size: auto, auto, cover;
 }
+
 /* RIGHT / BOTTOM --- NEED MEDIA SNAP** */
 .rightContent {
   grid-area: rc;
