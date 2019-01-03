@@ -1,21 +1,46 @@
-body {
+
+.main-wrapper {
+  display: grid;
   background-color: lightgrey;
   text-align: center;
-  margin: 0;
-  
+  border-radius: 5px;
+  margin: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr 1fr;
+  grid-template-areas: 
+    "mh"
+    "p"
+    "ft";
 }
 
 .myhead {
+  grid-area: mh;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+}
+.text{
   background-color: purple;
-  font-size: 150px;
+  height: 33%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 p {
-  font-size: 80px;
+  grid-area: p;
+  font-size: 40px;
 }
 
 footer {
-  font-size: 30px;
+  background-color: lightseagreen;
+  grid-area: ft;
+  font-size: 20px;
   color: purple;
   font-weight: 100;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
