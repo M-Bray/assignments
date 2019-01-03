@@ -2,6 +2,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+	font-family: 'verdemoderna';
+	src:url('verdemoderna.eot');
+	src:url('verdemoderna.eot?#iefix') format('embedded-opentype'),
+		url('verdemoderna.woff') format('woff'),
+		url('verdemoderna.ttf') format('truetype'),
+		url('verdemoderna.svg#verdemoderna') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} 
+
+
 /* INHERIT BASE */
 body {
   color: #325050;
@@ -142,6 +154,7 @@ ul {
   position: absolute;
   width: 30px;
   height: 70px;
+  right: 27px;
   text-align: center;
   text-indent: 0;
   font-size: 44px;

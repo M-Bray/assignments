@@ -1,0 +1,21 @@
+body {
+  background-color: lightgrey;
+  text-align: center;
+  margin: 0;
+  
+}
+
+.myhead {
+  background-color: purple;
+  font-size: 150px;
+}
+
+p {
+  font-size: 80px;
+}
+
+footer {
+  font-size: 30px;
+  color: purple;
+  font-weight: 100;
+}
