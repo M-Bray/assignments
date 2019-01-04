@@ -18,36 +18,54 @@ const RandomColorGenD = () => {
 }
 const Boxy = (props) => {
   let color = RandomColorGen()
-  let colorB =RandomColorGenB()
-  let colorC =RandomColorGenC()
-  let colorD =RandomColorGenD()
-  return ( 
-    <div className="boxA" 
-    style={{
-      display: "flex",
-      backgroundColor: color,
-      alignItems: "center", 
-      border: "1px solid black",
-      borderRadius: "2px",
-      margin: "5px"
+  let colorB = RandomColorGenB()
+  let colorC = RandomColorGenC()
+  let colorD = RandomColorGenD()
+  return (
+    <div className="boxA"
+      style={{
+        alignItems: "center",
+        boxShadow: "2px 3px 3px 1px",
+        padding: "10px",
+        display: "flex",
+        width: "auto",
+        height: "10vh",
+        backgroundColor: color,
+        border: "1px solid black",
+        borderRadius: "2px",
+        margin: "10px"
       }}>
       <h1 style={{
+        display: "flex",
+        fontSize: "22px",
         margin: "auto",
+        paddingRight: "20px",
         color: colorB
-      }}>{props.jobOpening.job}
+      }}>{props.job}
       </h1>
       <h3 style={{
+        display: "flex",
         margin: "auto",
         color: colorC
-      }}>{props.jobOpening.location}
+      }}>{props.location}
       </h3>
       <p style={{
+        display: "flex",
+        width: "80vw",
         margin: "auto",
+        padding: "30px",
         color: colorD
-      }}>{props.jobOpening.summary}
+      }}>{props.summary}
       </p>
-      <footer>{props.jobOpening.phone}</footer>
-      <footer>{props.jobOpening.email}</footer>
+      <footer style={{
+        display: "flex",
+        margin: "auto"
+      }} >{props.phone}</footer>
+      <footer style={{
+        display: "flex",
+        margin: "auto",
+        paddingRight: "10px"
+      }}>{props.email}</footer>
     </div>
   )
 }
