@@ -203,30 +203,28 @@ a:hover {
 }
 
 .viewAll {
+  padding-top: 14px;
   line-height: 50px;
-  align-self: center;
   font-size: 14px;
   grid-area: va;
 }
 
 /* LEFT / MAIN CONTENT---- NEED TO SNAP exampleLinkP  */
 #exampleLinkP {
-  
+  display: none;
 }
 
 .leftContent {
+  margin: 0 auto;
+  width: 100%;
   grid-area: lc;
-  /* margin: 0 auto; */
   padding-top: 2em;
-}
-
-.left {
-  
 }
 
 p {
   margin: 0.75em 0;
   line-height: 2;
+  width: 80%;
 }
 
 p, li {
@@ -238,7 +236,6 @@ li {
 }
 
 h3 {
-  margin: 2em 0 0 0;
   color: #2e484c;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 1.8em;
@@ -246,10 +243,12 @@ h3 {
   text-transform: uppercase;
 }
 
-div#leftBamboo {
+.leftBamboo {
+  width: 100%;
 }
 
 #leftBamboo {
+  width: 100%;
   background-attachment: scroll, scroll, fixed;
   background-color: rgba(138,188,159,0.5);
   background-image: url(http://www.csszengarden.com/214/contours-opaque.png), url(http://www.csszengarden.com/214/gridlines-opaque.png), url(http://www.csszengarden.com/214/bamboo.png);
