@@ -1,33 +1,94 @@
-html {
-  width: 100vw;
-  height: 100vh;
+* {
+ border-spacing: 0;
 }
+
 body {
+  margin: auto;
   width: 100vw;
   height: 100vh;
+}
+
+table {
+  width: 100vw;
+  height: 100vh;
+}
+
+th, td {
+  border: 1px solid black;
   background-color: whitesmoke;
+  transition: background-color 0.8s ease;
 }
-.graphWrapper {
-  display: grid;
-  width: 98vw;
-  height: 98vh;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c"
-  "c, c, c, c, c, c, c, c, c, c, c, c";
+td:hover {
+  background-color: black;
 }
-.cell {
-  grid-area: c;
-  
+
+#black {
+  transition: background-color 0.5s ease;
+  background-color: black;
+}
+#black:hover {
+  background-color: white;
+
+}
+#blue {
+  transition: background-color 0.5s ease;
+  background-color: #030FFB;
+}
+#blue:hover {
+  background-color: #FBEF03;
+}
+
+#yellow {
+  transition: background-color 0.5s ease;
+  background-color: #FBEF03;
+}
+#yellow:hover {
+  background-color: #030FFB;
+}
+#green {
+  transition: background-color 0.5s ease;
+  background-color: #00AF23;
+}
+#green:hover {
+  background-color: #AF008C;
+}
+
+#purple {
+  transition: background-color 0.5s ease;
+  background-color: #AF008C;
+}
+#purple:hover {
+  background-color: #00AF23;
+}
+
+#red {
+  transition: background-color 0.5s ease;
+  background-color: #FB0303;
+}
+#red:hover {
+  background-color: #03FBFB;
+}
+
+#cornsilk {
+  transition: background-color 0.5s ease;
+  background-color: #F3F9B6;
+}
+#cornsilk:hover {
+  background-color: #BCB6F9;
+}
+
+#brown {
+  transition: background-color 0.5s ease;
+  background-color: #813100;
+}
+#brown:hover {
+  background-color: #005081;
+}
+
+#maroon {
+  transition: background-color 0.5s ease;
+  background-color: #8C0040;
+}
+#maroon:hover {
+  background-color: #008C4C;
 }

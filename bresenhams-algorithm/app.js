@@ -74,4 +74,4 @@ let drawLine = (x1, y1, x2, y2) => {
     }
   }
 }
-console.log((12 * 12) * 4)
+console.log((47 * 3) / 2)
