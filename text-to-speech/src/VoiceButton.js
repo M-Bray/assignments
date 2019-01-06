@@ -14,7 +14,7 @@ const divStyle = {
 const inputStyle = {
   fontSize: "44px",
   backgroundColor: "cornsilk",
-  borderRadius: "2px"
+  borderRadius: "2.8px"
 }
 
 const buttonStyle = {
@@ -22,7 +22,7 @@ const buttonStyle = {
   fontSize: "44px",
   backgroundColor: "whitesmoke",
   borderRadius: "2px",
-  boxShadow: "1px 1px 2px 3px"
+  boxShadow: "0px 20px 0px -5px"
 }
 
 ////////////////////////////////////////////////

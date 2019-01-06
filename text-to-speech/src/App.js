@@ -41,3 +41,5 @@ import React, { Component } from 'react'
     )
   }
 }
+
+  console.log("hello")

@@ -1,0 +1,33 @@
+html {
+  width: 100vw;
+  height: 100vh;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+.graphWrapper {
+  display: grid;
+  width: 98vw;
+  height: 98vh;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c"
+  "c, c, c, c, c, c, c, c, c, c, c, c";
+}
+.cell {
+  grid-area: c;
+  
+}
