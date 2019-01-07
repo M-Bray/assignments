@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: grid;
+  background-image: url(https://fbcd.co/images/products/26e6f90d3d8c6a32f240dc55dabe4f3c.jpg);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+#root {
+  width: 100%;
+}
+
+#top {
+  grid-area: t;
+}
+h1 {
+}
+
+#card {
+  padding: 2%
+}
+
+#cardWrap {
+  width: 80%;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(127, 128, 255, .3);
+}
+
+#siteWrap {
+}
+

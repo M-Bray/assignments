@@ -26,6 +26,7 @@ import React, { Component } from 'react'
    render() {
      return (
       <div style={{
+        margin: "5px",
         width: "100vw",
         height: "100vh",
         display: "grid",
