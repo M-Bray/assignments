@@ -1,35 +1,38 @@
-import React from "react"
-
 const vacationSpots = [
   {
     id: 1,
-    place: "Meridian, Idaho",
-    price: 40,
-    timeToGo: "Spring"
+    place: "Moon",
+    price: `4,000,000`,
+    timeToGo: "Spring",
+    budget: "$"
   },
   {
     id: 2,
-    place: "Cancun",
-    price: 900,
-    timeToGo: "Winter"
+    place: "Mercury",
+    price: `6,000,000`,
+    timeToGo: "Winter",
+    budget: "$"
   },
   {
     id: 3,
-    place: "China",
-    price: 1200,
-    timeToGo: "Fall"
+    place: "Mars",
+    price: `10,500,000`,
+    timeToGo: "Fall",
+    budget: "$"
   },
   {
     id: 4,
-    place: "Russia",
-    price: 1100,
-    timeToGo: "Summer"
+    place: "Jupiter",
+    price: `110,000,000`,
+    timeToGo: "Summer",
+    budget: "$$"
   },
   {
     id: 5,
-    place: "Lebanon",
-    price: 400,
-    timeToGo: "Spring"
+    place: "Pluto",
+    price: `400,000,000`,
+    timeToGo: "Spring",
+    budget: "$$$"
   }
 ]
 
