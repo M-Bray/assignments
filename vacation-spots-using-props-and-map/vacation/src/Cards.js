@@ -1,7 +1,6 @@
 import React from "react"
 
 function Cards(props) {
-  console.log(props.image)
   return (
     <div id="cardWrap">  
         <img src={props.image} style={{

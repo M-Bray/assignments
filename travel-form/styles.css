@@ -4,47 +4,62 @@ body {
 #siteWrap {
     display: grid;
     max-height: 100vh;
-    grid-template-areas: 
-    "h h h h h h h h h h h h" 
-    ". . d d b b b b b b b b"
-    "f f f f f f f f f f f f";
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    max-width: 100vw;
+    grid-template: 
+    "h h h h h h" 
+    ". . . . . ."
+    ". d d . . ."
+    ". . . . . ."
+    "f f f f f f";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     background: url(moon-airlines.jpg) center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 #topHeader {
+    width: auto;
+    height: auto;
     grid-area: h;
     position: relative;
     font-size: 80px;
     color: #dbdee0;
 }
-.divOne {
+.box {
+    height: 250px;
+    width: 250px;
+    display: grid;
     grid-area: d;
-    /* grid-template-areas: 
-        "PErsonal info, genderDiv, infoDiv, diet"
-    margin: auto;
-    width: 310px;
-    height: 483px; */
-
-    /* right: 505px;
-    top: 172px; */
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "a";
+    
 }
 #application {
-
+    display: grid;
     grid-area: a;
-    width: 100%;
-    height: 100%;
+    width: 30vw;
+    height: 30vh;
     background-color: #385264;
     border-radius: 3px;
     opacity: .6;  
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template
+}
+#firstName {
+    grid-template-areas: fn;
+} 
+#lastName {
+    grid-template-areas: ln;
+}
+#age {
+    grid-template-areas: age;
 }
 .personalInfo {
     width: 80%;
     height: 25px;
     font-size: 22px;
-    position: relative;
     border-radius: 2px;
 }
 #age {
