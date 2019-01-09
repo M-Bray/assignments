@@ -18,10 +18,7 @@ function App() {
   const vacationComponents = vacationSpots.map(vacation => <Vacation key={vacation.id} place={vacation.place} price={vacation.price} timeToGo={vacation.timeToGo} budget={vacation.budget} image={vacation.img} />)
 
   return (
-    <div id="siteWrap" style={{
-      textAlign: "center",
-      
-    }}>
+    <div id="siteWrap" style={{textAlign: "center"}}>
       <nav id="top">
         <h1>Travel To A Distant Land</h1>
       </nav>

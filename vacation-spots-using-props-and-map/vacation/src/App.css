@@ -11,32 +11,60 @@ html {
 
 #root {
   width: 100%;
+  color: rgb(11, 11, 83);
 }
 
 #top {
   grid-area: t;
 }
 h1 {
+  font-size: xx-large;
+  color: black;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #card {
   padding: 2%
 }
 
-#cardWrap {
+.cardWrap {
   width: 80%;
   margin: auto;
+  margin-top: 50px;
   padding: 20px;
+  transition: background-color .5s ease-in-out, box-shadow .25s ease-in-out;
+  /* transition: box-shadow .25s ease-in-out; */
   background-color: rgba(127, 128, 255, .3);
+  box-shadow: 10px 10px 5px 5px #888888;
   border-radius: 3px;
 }
-#cardWrap:hover {
-  shadow: ;
+.cardWrap:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px;
+  background-color: rgba(255, 254, 127, .2)
 }
 
-#siteWrap {
+.cardWrap img {
+  position: relative;
+  transition: z-index 2s ease-in-out;
+}
+
+.cardWrap img:hover {
+  z-index: -1;
+}
+
+img {
+  
+}
+#budget {
+  color: green;
+}
+
+#budget:hover {
+  cursor: auto;
+  color: orange;
 }
 
 
 
-raises money for restoration at fairgrounds   Momma voted on the board of heritage foundation
+/* raises money for restoration at fairgrounds   Momma voted on the board of heritage foundation */

@@ -64,11 +64,3 @@
 // }
 
 // person.getDressed();
-
-
-
-
-
-
-
-
