@@ -49,9 +49,9 @@ h1 {
   transition: z-index 2s ease-in-out;
 }
 
-.cardWrap img:hover {
+/* .cardWrap img:hover {
   z-index: -1;
-}
+} */
 
 img {
   
