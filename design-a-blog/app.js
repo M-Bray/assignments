@@ -36,4 +36,4 @@ function atTime(ms){
 		console.log(date.toLocaleString())
 	}, ms);
 } 
-atTime(5000)
+atTime(0)
