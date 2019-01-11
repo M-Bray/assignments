@@ -52,6 +52,10 @@ header {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.introPar {
+  margin: 20px;
+}
+
 main {
   grid-area: m;
   text-align: center;
@@ -96,7 +100,6 @@ footer {
   grid-area: f;
 }
 
-
-  
-
-  
+.footInput {
+  background-color: rgba(255, 254, 127, .2);
+}
