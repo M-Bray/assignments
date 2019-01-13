@@ -19,7 +19,7 @@ class Form extends Component {
   }
   handleSubmit(e) {
     e.preventDefault()
-    alert(JSON.stringify(this.state))
+    this.props.submit(this.state)
   }
 
   render() {

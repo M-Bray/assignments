@@ -37,7 +37,7 @@ body {
   width: 25%;
   padding: 2px;
   margin: 12px;
-  transition: background-color .5s ease-in-out, box-shadow .25s ease-in-out;
+  transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
   background-color: rgba(247, 147, 33, 0.856);
   border-radius: 2px;
 }
@@ -102,7 +102,9 @@ main {
   background-color: orangered;
 } 
 
-footer {
+.footClass {
+  margin: 20px;
+  margin-bottom: 30px;
   grid-area: f;
 }
 
