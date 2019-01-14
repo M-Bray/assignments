@@ -48,7 +48,8 @@ body {
   background-color: rgba(245, 60, 3, 0.911);
 }
 
-header {
+.headerClass {
+  background-color: rgb(179, 179, 179);
   grid-area: h;
 }
 
@@ -103,7 +104,7 @@ main {
 } 
 
 .footClass {
-  margin: 20px;
+  background-color: rgb(202, 202, 202);
   margin-bottom: 30px;
   grid-area: f;
 }
