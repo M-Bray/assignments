@@ -1,11 +1,11 @@
 import React from 'react';
 
-
+import VisionData from './VisionData'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello World</h1>
+      <VisionData />
     </div>
   )
 }
