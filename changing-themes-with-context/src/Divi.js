@@ -22,20 +22,18 @@ export default class Divi extends Component {
         <div class="brown"></div>
         <div class="brown"></div>
         <div class="brown"></div>
-        <div class="brown B"></div>
+        <div class="brown B C"></div>
         <div class="black"></div>
         <div class="black"></div>
-        
+
         <div class="black"></div>
         <div class="black"></div>
         <div class="brown A"></div>
         <div class="brown"></div>
         <div class="tan A">
-          <div class=" A"></div>
-        </div>
-          
+        </div> 
         <div class="tan"></div>
-        <div class="tan B "></div>
+        <div class="black "></div>
         <div class="black "></div>
         <div class="black"></div>
         <div class="black"></div>
@@ -47,8 +45,8 @@ export default class Divi extends Component {
         <div class="tan A"></div>
         <div class="tan"></div>
         <div class="blue"></div>
-        <div class="tan"></div>
-        <div class="blue B C"></div>
+        <div class="tan B"></div>
+        <div class="black"></div>
         <div class="black"></div>
         <div class="black"></div>
 
@@ -58,7 +56,7 @@ export default class Divi extends Component {
         <div className="tan"></div>
         <div className="tan"></div>
         <div className="tan"></div>
-        <div className="tan"></div>
+        <div className="tanB"></div>
         <div></div>
         <div></div>
         <div></div>
