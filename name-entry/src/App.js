@@ -3,7 +3,7 @@ import TodoFeature from "./TodoFeature"
 
 function App() {
   return (
-    <TodoFeature/>
+    <TodoFeature />
   )
 }
- export default App
+export default App
