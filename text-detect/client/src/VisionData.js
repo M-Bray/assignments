@@ -19,8 +19,8 @@ export default class VisionData extends Component {
 
   render() {
     return (
-      <div>
-        {/* render data stuff here */}
+      <div className="dataDiv">
+        <h1>hello world</h1>
       </div>
     )
   }
