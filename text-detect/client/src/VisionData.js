@@ -13,7 +13,9 @@ export default class VisionData extends Component {
     axios.get('/vision')
   }
   componentDidMount(){
+    
     // make your api request and set state
+    
     this.getVisionData()
   }
 
