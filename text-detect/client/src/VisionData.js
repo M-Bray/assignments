@@ -20,7 +20,7 @@ export default class VisionData extends Component {
   render() {
     return (
       <div className="dataDiv">
-        <h1>hello world</h1>
+        
       </div>
     )
   }

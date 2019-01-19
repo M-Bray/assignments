@@ -3,12 +3,12 @@ import React from 'react'
 
 const Nav = () => {
   return(
-    <div className="navBar">
-      <div className="navTabs">Home</div>
-      <div className="navTabs">Application</div>
-      <div className="navTabs">About</div>
-      <div className="navTabs">Contact</div>
-    </div>
+    <nav className="navTab">
+            <button className="navButtons"><b>H</b>ome</button>
+            <button className="navButtons"><b>T</b>eam</button>
+            <button className="navButtons"><b>N</b>ews</button>
+            <button className="navButtons"><b>H</b>elp</button>
+        </nav>
   )
 }
 
