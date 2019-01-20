@@ -5,24 +5,25 @@ export default class VisionData extends Component {
   constructor(){
     super();
     this.state = {
-      data: {}
+      data: axios
     }
   }
 
   getVisionData(){
-    axios.get('/vision')
+    return  axios.get('/vision')
   }
+
   componentDidMount(){
+    this.setState({data: this.getVisionData()}) 
+    // make api request 
+    //settate
     
-    // make your api request and set state
-    
-    this.getVisionData()
   }
 
   render() {
     return (
       <div className="dataDiv">
-        
+        <div> </div>
       </div>
     )
   }
