@@ -5,7 +5,7 @@ export default class VisionData extends Component {
   constructor(){
     super();
     this.state = {
-      data: axios
+      data: axios,
     }
   }
 
