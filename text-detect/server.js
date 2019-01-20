@@ -12,6 +12,8 @@ app.use(express.json(), express.urlencoded());
 
 app.get('/vision', (req, res) => {
 
+  console.log("Testing")
+
   client
   .documentTextDetection('./tmp/handwritten-note.jpg')
   .then(results => {

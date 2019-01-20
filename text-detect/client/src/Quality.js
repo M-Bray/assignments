@@ -6,9 +6,9 @@ const Quality = () => {
   return (
     <div>
       <Nav />
-      <h1>Our Team</h1>
-      <h3></h3>
-      <h3></h3>
+      <div>Our Team</div>
+      <div></div>
+      <div></div>
       <Footer />
     </div>
   )

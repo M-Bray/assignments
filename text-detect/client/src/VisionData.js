@@ -2,28 +2,32 @@ import React, { Component } from 'react';
 import axios from 'axios'
 
 export default class VisionData extends Component {
-  constructor(){
+  constructor() {
     super();
     this.state = {
-      data: axios,
+      text: "",
     }
   }
 
-  getVisionData(){
-    return  axios.get('/vision')
+  getVisionData() {
+    return axios.get('/vision')
   }
 
-  componentDidMount(){
-    this.setState({data: this.getVisionData()}) 
+  componentDidMount() {
+    axios.get("/vision")
+      .then(response => {
+        console.log(response.data[0].fullTextAnnotation.text)
+        this.setState({ text: response.data[0].fullTextAnnotation.text })
+      })
     // make api request 
-    //settate
-    
+    //set state
+
   }
 
   render() {
     return (
       <div className="dataDiv">
-        <div> </div>
+        <h1>{this.state.text}</h1>
       </div>
     )
   }
