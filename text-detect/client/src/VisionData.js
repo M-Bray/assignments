@@ -19,15 +19,12 @@ export default class VisionData extends Component {
         console.log(response.data[0].fullTextAnnotation.text)
         this.setState({ text: response.data[0].fullTextAnnotation.text })
       })
-    // make api request 
-    //set state
-
   }
 
   render() {
     return (
       <div className="dataDiv">
-        <h1>{this.state.text}</h1>
+        <p className="dataPar">{this.state.text}</p>
       </div>
     )
   }

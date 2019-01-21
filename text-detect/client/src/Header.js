@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="headerClass">
       <h1 className="titleHeader">Text Detect</h1>
-      <h3 className="welcomeHeader">A Picture Says a Thousand Words</h3>
+      <h4 className="welcomeHeader"><i>A Picture Says a Thousand Words</i></h4>
       <p className="introPar">
         Here you can identify and extract text from within an image.
       </p>

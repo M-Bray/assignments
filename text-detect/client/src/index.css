@@ -6,33 +6,25 @@
 html body {
   height: 100vh;
   width: 100vw;
-}
-
-body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: whitesmoke;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("https://images.pexels.com/photos/136419/pexels-photo-136419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .siteWrap {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(252, 252, 248, 0.2);
+  background-color: rgba(70, 70, 66, 0.521);
   text-align: center;
-  /* background-image: url("https://images.pexels.com/photos/269923/pexels-photo-269923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"); */
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .navTab {
   display: flex;
+  margin: auto;
   justify-content: center;
-  align-items: stretch;
-  width: 100%;
   height: 93px;
-  grid-area: n;
   background-color: rgba(158, 158, 158, 0.507);
 }
 
@@ -54,23 +46,23 @@ body {
 }
 
 .headerClass {
-  background-size: contain;
-  background-position: center;
-  background-color: rgb(179, 179, 179, 0.707);
+  display: flex;
+  margin: auto;
+  width: 100vw;
+  flex-direction: column;
   border-color: rgb(255, 139, 6);
 }
 
 .titleHeader {
-  display: inline-flex;
   margin-top: 2%;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   font-size: 44px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-shadow: 0px 0px 2px rgba(6, 122, 255);
 }
 
 .introPar {
-  margin: 5%;
+  margin: 2%;
   text-shadow: 0px 0px .03px rgba(6, 122, 255);
 }
 
@@ -83,12 +75,26 @@ body {
   text-shadow: 0px 0px .03px rgba(255, 139, 6);
 }
 
-.dataDiv {
-  height: 5em;
+.dataPar {
+  display: flex;
+  margin: auto;
+  width: 500px;
+  height: 500px;
+  text-shadow: 0px 0px .03px rgb(50, 250, 0);
 }
 
 .imgButton {
+  display: flex;
+  margin: auto;
   width: auto;
   height: auto;
   background-image: "/Users/student/dev/assignments/text-detect/tmp/handwritten-note.jpg";
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 500px;
+  height: 500px;
 }
