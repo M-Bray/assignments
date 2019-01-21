@@ -16,7 +16,8 @@ html body {
 .siteWrap {
   width: 100vw;
   height: 100vh;
-  background-color: rgba(70, 70, 66, 0.521);
+  background-color: rgba(216, 216, 216, 0.821);
+  border-radius: 4px;
   text-align: center;
 }
 
@@ -25,7 +26,6 @@ html body {
   margin: auto;
   justify-content: center;
   height: 93px;
-  background-color: rgba(158, 158, 158, 0.507);
 }
 
 .navButtons {
@@ -35,14 +35,14 @@ html body {
   margin: 12px;
   border-color: rgba(6, 122, 255);
   transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
-  background-color: rgba(247, 147, 33, 0.856);
+  background-color: rgba(103, 172, 91);
   border-radius: 2px;
 }
 
 .navButtons:hover {
   cursor: pointer;
   box-shadow: 6px 10px 7px -5px black;
-  background-color: rgb(255, 139, 6);
+  background-color: rgb(103, 172, 91, 0.856);
 }
 
 .headerClass {
@@ -50,7 +50,6 @@ html body {
   margin: auto;
   width: 100vw;
   flex-direction: column;
-  border-color: rgb(255, 139, 6);
 }
 
 .titleHeader {
@@ -62,17 +61,18 @@ html body {
 }
 
 .introPar {
+  font-size: 25px;
   margin: 2%;
-  text-shadow: 0px 0px .03px rgba(6, 122, 255);
+  text-shadow: 0px 0px .03px rgba(103, 172, 91);
 }
 
 .welcomeHeader {
-  text-shadow: 0px 0px .03px rgba(255, 139, 6);
+  text-shadow: 0px 0px .03px rgba(103, 172, 91);
 }
 
 .introClosingHeader {
   margin-bottom: 2%;
-  text-shadow: 0px 0px .03px rgba(255, 139, 6);
+  text-shadow: 0px 0px .03px rgba(103, 172, 91);
 }
 
 .dataPar {

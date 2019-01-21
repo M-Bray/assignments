@@ -15,7 +15,7 @@ app.get('/vision', (req, res) => {
   console.log("Testing")
 
   client
-  .documentTextDetection('./tmp/Screen Shot 2019-01-17 at 9.53.50 PM.png')
+  .documentTextDetection('./tmp/handwritten-note.jpg')
   .then(results => {    
     res.send(results)
   })
