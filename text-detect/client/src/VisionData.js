@@ -24,7 +24,7 @@ export default class VisionData extends Component {
   render() {
     return (
       <div className="dataDiv">
-        <img className="imgExample" src='https://media.npr.org/assets/img/2016/04/17/handwritten-note_wide-941ca37f3638dca912c8b9efda05ee9fefbf3147.jpg?s=1400' />
+        <img className="imgExample" src='https://media.npr.org/assets/img/2016/04/17/handwritten-note_wide-941ca37f3638dca912c8b9efda05ee9fefbf3147.jpg?s=1400' alt="A Hand Written Note"/>
         <p className="dataPar">{this.state.text}</p>
 
       </div>
