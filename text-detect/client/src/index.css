@@ -4,7 +4,6 @@
 }
 
 html body {
-  height: 100vh;
   width: 100vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
@@ -15,17 +14,15 @@ html body {
 
 .siteWrap {
   width: 100vw;
-  height: 100vh;
-  background-color: rgba(216, 216, 216, 0.821);
-  border-radius: 4px;
   text-align: center;
 }
 
 .navTab {
+  width: 100%;
   display: flex;
-  margin: auto;
-  justify-content: center;
-  height: 93px;
+  background-color: rgba(216, 216, 216, 0.821);
+  height: 85px;
+  border-radius: 3px;
 }
 
 .navButtons {
@@ -46,10 +43,13 @@ html body {
 }
 
 .headerClass {
+
   display: flex;
-  margin: auto;
+  margin-top: 25px;
   width: 100vw;
   flex-direction: column;
+  background-color: rgba(216, 216, 216, 0.821);
+  border-radius: 3px;
 }
 
 .titleHeader {
@@ -75,12 +75,26 @@ html body {
   text-shadow: 0px 0px .03px rgba(103, 172, 91);
 }
 
+.dataDiv {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgExample {
+  width: 40%;
+}
+
 .dataPar {
   display: flex;
-  margin: auto;
-  width: 500px;
-  height: 500px;
+  padding: 5%;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 150%;
+  background-color: rgba(216, 216, 216, 0.821);
   text-shadow: 0px 0px .03px rgb(50, 250, 0);
+  border-radius: 4px;
 }
 
 .imgButton {
@@ -95,6 +109,6 @@ html body {
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 500px;
-  height: 500px;
+  width: 100%;
+  background-color: rgba(216, 216, 216, 0.821);
 }
