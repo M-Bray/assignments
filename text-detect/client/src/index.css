@@ -20,6 +20,7 @@ html body {
 .navTab {
   top:0px;
   position: fixed;
+  align-items: center;
   width: 100%;
   display: flex;
   background-color: rgba(216, 216, 216, 0.821);
@@ -29,14 +30,17 @@ html body {
 }
 
 .navButtons {
-  font-size: 22px;
-  width: 25%;
-  padding: 2px;
-  margin: 12px;
+  color: black;
+  text-decoration: none;
+  font-size: 100%;
+  width: 13%;
+  /* padding: 2px; */
+  margin: 9px;
   border-color: rgba(80, 140, 184);
   transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
   background-color: rgba(80, 140, 184);
   border-radius: 2px;
+  padding: 1%;
 }
 
 .navButtons:hover {
