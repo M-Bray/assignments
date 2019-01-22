@@ -9,7 +9,7 @@ const Header = () => {
       <p className="introPar">
         Here you can identify and extract text from within an image.
       </p>
-      <h3 className="introClosingHeader">Give it a Go!</h3>
+      <h2 className="introClosingHeader">Give it a Go!</h2>
     </header>
   )
 }

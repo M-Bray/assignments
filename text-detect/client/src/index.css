@@ -18,11 +18,14 @@ html body {
 }
 
 .navTab {
+  top:0px;
+  position: fixed;
   width: 100%;
   display: flex;
   background-color: rgba(216, 216, 216, 0.821);
   height: 85px;
-  border-radius: 3px;
+  border-radius: 2px;
+  box-shadow: 0px 0px .1px rgb(0, 0, 0);
 }
 
 .navButtons {
@@ -30,26 +33,26 @@ html body {
   width: 25%;
   padding: 2px;
   margin: 12px;
-  border-color: rgba(6, 122, 255);
+  border-color: rgba(80, 140, 184);
   transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
-  background-color: rgba(103, 172, 91);
+  background-color: rgba(80, 140, 184);
   border-radius: 2px;
 }
 
 .navButtons:hover {
   cursor: pointer;
   box-shadow: 6px 10px 7px -5px black;
-  background-color: rgb(103, 172, 91, 0.856);
+  background-color: rgba(80, 140, 184, 0.756);
 }
 
 .headerClass {
-
+  margin-top: 100px;
   display: flex;
-  margin-top: 25px;
   width: 100vw;
   flex-direction: column;
   background-color: rgba(216, 216, 216, 0.821);
-  border-radius: 3px;
+  border-radius: 2px;
+  box-shadow: 0px 0px .1px rgb(0, 0, 0);
 }
 
 .titleHeader {
@@ -57,7 +60,7 @@ html body {
   margin-bottom: 1%;
   font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-shadow: 0px 0px 2px rgba(6, 122, 255);
+  text-shadow: 0px 0px 2px rgb(78, 139, 182);
 }
 
 .introPar {
@@ -76,15 +79,18 @@ html body {
 }
 
 .dataDiv {
-  margin-top: 30px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .imgExample {
+  cursor: pointer;
   width: 50%;
   box-shadow: 0px 0px 5px black;
+  margin-bottom: 55px;
 }
 
 .dataPar {
@@ -94,22 +100,26 @@ html body {
   margin-bottom: 50px;
   font-size: 150%;
   background-color: rgba(216, 216, 216, 0.821);
-  text-shadow: 0px 0px .03px rgb(50, 250, 0);
+  text-shadow: 0px 0px .03px rgb(60, 255, 0);
+  box-shadow: 0px 0px .1px rgb(0, 0, 0);  
   border-radius: 4px;
 }
 
-.imgButton {
-  display: flex;
-  margin: auto;
-  width: auto;
-  height: auto;
-  background-image: "/Users/student/dev/assignments/text-detect/tmp/handwritten-note.jpg";
-}
-
 .footerDiv {
+  position: fixed;
+  bottom: 0px;
+  font-family: monospace;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
   margin: auto;
   width: 100%;
   background-color: rgba(216, 216, 216, 0.821);
+}
+
+.footerP {
+  margin-right: 55px;
+}
+
+.footerCopyright {
+  margin-left: 55px;
 }
