@@ -1,16 +1,19 @@
 import React from 'react';
-
 import Nav from './Nav'
-import Header from './Header'
 import Footer from './Footer'
-import VisionData from './VisionData'
+import Home from './Home'
+import Quality from './Quality'
+import { Switch, Route } from "react-router-dom";
 
-const App = () => {
+
+function App() {
   return (
     <div className="siteWrap">
       <Nav />
-      <Header />
-      <VisionData />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/quality" component={Quality} />
+      </Switch>
       <Footer />
     </div>
   )

@@ -1,14 +1,12 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-
-const Nav = () => {
-  return(
+function Nav(props) {
+  return (
     <nav className="navTab">
-            <button className="navButtons"><b>H</b>ome</button>
-            <button className="navButtons"><b>Q</b>uality</button>
-            <button className="navButtons"><b>C</b>ontact</button>
-            <button className="navButtons"><b>H</b>elp</button>
-        </nav>
+      <Link to="/" className="navButtons" ><b>H</b>ome</Link>
+      <Link to="/quality" className="navButtons" ><b>Q</b>uality</Link>
+    </nav>
   )
 }
 
