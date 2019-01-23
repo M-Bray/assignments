@@ -1,45 +1,46 @@
 const uuid = require('uuid');
 
-const CosmicBeverage = function(beverage){
+const Transformer = function (bot) {
   this._id = uuid();
-  this.name = beverage.name;
-  this.origin = beverage.origin;
-  this.price = beverage.price;
+  this.name = bot.name;
+  this.affiliation = bot.affiliation;
+  this.vehicle = bot.vehicle;
 }
 
-const Database = function() {
-  this.cosmicBeverages = [];
+const Database = function () {
+  this.transformers = [];
 }
 
-Database.prototype.find = function() {
-  return this.cosmicBeverages;
+Database.prototype.find = function () {
+  return this.transformers;
 }
 
-Database.prototype.save = function(beverage) {
-  const newBeverage = new CosmicBeverage(beverage);
-  this.cosmicBeverages.push(newBeverage);
-  return newBeverage;
+Database.prototype.save = function (bot) {
+  const newBot = new Transformer(bot);
+  this.transformers.push(newBot);
+  return newBot;
 }
 
-Database.prototype.findByIdAndRemove = function(id){
-  const foundBeverage = this.cosmicBeverages.find(beverage => {
-    return beverage._id === id;
+Database.prototype.findByIdAndRemove = function (id) {
+  const foundBot = this.transformers.find(bot => {
+    return bot._id === id;
   })
-  if(foundBeverage === undefined) return;
+  //make sure bot isn't undefined
+  if (foundBot === undefined) return;
 
-  //find index of beverage
-  const index = this.cosmicBeverages.indexOf(foundBeverage);
+  //find index of bot
+  const index = this.transformers.indexOf(foundBot);
   //remove it frim the array
-  this.cosmicBeverages.splice()
+  this.transformers.splice()
 }
 
 Database.prototype.findByAndUpdate = function (id, updates) {
 
-  const foundBeverage = this.cosmicBeverages.find(beverage => {
-    return beverage._id === id;
+  const foundBot = this.transformers.find(bot => {
+    return bot._id === id;
   })
 
-  const index = this.cosmicBeverages.indexOf(foundBeverage)
+  const index = this.transformers.indexOf(foundBot)
 
 }
 

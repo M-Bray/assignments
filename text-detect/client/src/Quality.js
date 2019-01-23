@@ -5,6 +5,7 @@ const Quality = () => {
   return (
     <div className="qualityDiv">
       <h3>Our Team</h3>
+      <p>Our team consists of a </p>
       <h2>Our Service</h2>
       <h1>Our Customer</h1>
     </div>

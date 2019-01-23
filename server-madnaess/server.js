@@ -4,36 +4,31 @@ require('dotenv').config();
 const app = express();
 
 //DATABASE
-const database = require('./database.js');
+const database = require('./database');
 
 app.use(express.json());
 
-app.get('/cosmicBeverages', (req, res) => {
-  const foundBeverages = database.find();
-  res.send(foundBeverages);
+app.get('/transformers', (req, res) => {
+  const foundTransformers = database.find();
+  res.status(200).send(foundTransformers);
+})
+//POST
+app.post('/transformers', (req, res) => {
+  //access the request body
+  const newTransformer = req.body;
+  //save to database
+  const savedBot = database.save(newTransformer);
+  //send back the saved bot
+  res.status(201).send(savedBot)
 })
 
-app.post('/cosmicBeverages', (req, res) => {
-            
-  //NEED TO SEE WHAT THE REQUEST BODY CONTAINS
-  const beverageToSave = req.body;
-
-            
-  //ADD IT TO THE DATABASE
-  const savedBeverage = database.save(beverageToSave);
-            
-  //SEND BACK RESPONSE CONTAINING THE NEWLY
-  res.send(saved.Beverage)
-})
-
-app.delete('/cosmicBeverages/:id', (req, res) => {
-  //grab ID from req
+app.delete('/transformers/:id', (req, res) => {
+  //find the id from the url params
   const id = req.params.id;
-  //find the thing by the id
-  //remove the thing
+  //deletes from database
   database.findByIdAndRemove(id);
   //sendback a confirmation 204 response
-  res.status(204).send()
+  res.status(204).send();
 })
 
-app.listen(process.env.PORT, () => console.log('server is listening on 8080 yuh bish'))
+app.listen(process.env.PORT, console.log(`server is listening on PORT ${process.env.PORT} yuh bish`))
