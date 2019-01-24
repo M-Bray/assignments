@@ -13,19 +13,22 @@ html body {
 }
 
 .siteWrap {
+  display: flex;
+  justify-content: center;
   width: 100vw;
   text-align: center;
 }
 
 .navTab {
-  top:0px;
-  position: fixed;
-  align-items: center;
-  width: 100%;
   display: flex;
-  background-color: rgba(216, 216, 216, 0.821);
+  position: fixed;
+  margin-top: 6px;
+  width: 99vw;
   height: 85px;
+  top: 1%;
   border-radius: 2px;
+  align-items: center;
+  background-color: rgba(216, 216, 216, 0.821);
   box-shadow: 0px 0px .1px rgb(0, 0, 0);
 }
 
@@ -50,9 +53,9 @@ html body {
 }
 
 .headerClass {
-  margin-top: 100px;
+  margin-top: 120px;
   display: flex;
-  width: 100vw;
+  width: 99vw;
   flex-direction: column;
   background-color: rgba(216, 216, 216, 0.821);
   border-radius: 2px;
@@ -105,15 +108,16 @@ html body {
   font-size: 150%;
   background-color: rgba(216, 216, 216, 0.821);
   text-shadow: 0px 0px .03px rgb(60, 255, 0);
-  box-shadow: 0px 0px .1px rgb(0, 0, 0);  
+  box-shadow: 0px 0px .1px rgb(0, 0, 0);
   border-radius: 4px;
 }
 
 .footerDiv {
+  display: flex;
   position: fixed;
   bottom: 0px;
   font-family: monospace;
-  justify-content: center;
+  justify-content: space-evenly;
   display: flex;
   margin: auto;
   width: 100%;
@@ -131,9 +135,9 @@ html body {
 
 
 .qualityDiv {
-  margin-top: 100px;
   display: flex;
-  width: 100vw;
+  margin-top: 120px;
+  width: 99vw;
   flex-direction: column;
   background-color: rgba(216, 216, 216, 0.821);
   border-radius: 2px;
