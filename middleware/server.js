@@ -5,11 +5,6 @@ const middleware = require('./lib/index');
 
 const app = express();
 
-app.use((req, res, next) => {
-  req.test = 'Hello World'
-  req.
-  console.log(res)
-})
+app.use( middleware.logger);
 
-app.listen(process.env.PORT, () => console.log(`listening on PORT ${process.env.PORT}))
-
+app.listen(process.env.PORT, () => console.log(`listening on PORT ${process.env.PORT}`));
