@@ -10,18 +10,16 @@ const Quality = () => {
       </div>
       <div>
         <h2>We provide a service that allows you to extract and transcribe text from images.</h2>
-        <ul></ul>
-          <li>hand-written notes</li>
-          <li>Documents
-            <li>Images of documents can now be easily transcribed into text</li>
-          </li>
+          <ul>Hand-Written Notes</ul>
+          <li>Now you can take a picture with your phone, or upload an already saved photo, of a hand written note and easily make it reusable in any way you see fit.</li>
+          <lu>Documents</lu>
+          <li>Images of documents can now be easily transcribed into text.</li>
         <ul>Mood Detection</ul>
         <ul></ul>
       </div>
       <div>
         <h1>Our Customer</h1>
       </div>
-      
     </div>
   )
 }
