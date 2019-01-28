@@ -1,4 +1,5 @@
-const wild = (a, b) => {
-  return a + b;
+console.log("Hello World");
+
+function Truth() {
+  
 }
-console.log(wild(42, 5))

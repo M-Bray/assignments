@@ -1,10 +1,13 @@
 // Math.random() * (max - min) + min
 
 
-var rs = require("readline-sync");
+var readlineSync = require("readline-sync");
 var gameOver = false;
 var enemyTypes = ["a Dark Elf", "a Wicked Witch", "a Grimey Goblin"]
-var magicSpheres = ["Blue Sphere of Tidal Destruction", "Green Sphere of Entangling Constriction", "Yellow Sphere of Delusional Confusion"];
+function MagicSpheres(sphere, strength) {
+    this.sphere = sphere;
+    this.strength = strength
+}
 
 function attack(character) {
     var damage = Math.floor(Math.random() * 47);
@@ -34,16 +37,19 @@ function Enemy(name) {
 
 //GAME LOOP\\
 
-var name = rs.question("What is Your Name?, Child of the Great Spirit.\n");
-var player1 = new Player(name, 100);
+var name = readlineSync.question("What is Your Name?, Child of the Great Spirit.\n");
+console.log("Hello " + name + " Your quest awaits you ~ ~ ~ ~ \n")
+var player1 = new Player(name);
 while (true) {
-    var isWalking = rs.keyInYN("Welcome " + name + "\nWould you like to start Walking? \n");
+    var isWalking = readlineSync.keyInYN("Would you like to start Walking? \n ");
+    console.log("Walking")
     if (isWalking) {
-        var encountersEnemy = Math.random() < .3333333;
-        if (encountersEnemy) {
+        var encountersEnemy = Math.random() < .45;
+        if (encountersEnemy === false) {
+            console.log("keep going") }
             var enemy = new Enemy();
             console.log("you encountered " + enemy.name + "!");
-            var fight = rs.keyInYN("Stand and Fight? \n")
+            var fight = rs.keyInYN("Stand and Fight? \n");
             if (fight) {
                 switch (true) {
                     case (player1.hp <= 0): 
@@ -65,7 +71,6 @@ while (true) {
                 //if player dead --> Break
                 //if Enemy is dead --> move enemy item to inventory, increase
             
-            
-        }
+
     }
 }
