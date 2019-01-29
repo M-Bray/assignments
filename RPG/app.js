@@ -4,6 +4,8 @@
 var readlineSync = require("readline-sync");
 var gameOver = false;
 var enemyTypes = ["a Dark Elf", "a Wicked Witch", "a Grimey Goblin"]
+var sphere = ["Blue", "Yellow", "Red"]
+
 function MagicSpheres(sphere, strength) {
     this.sphere = sphere;
     this.strength = strength
@@ -31,26 +33,26 @@ function getRandomElement(arr) {
 function Enemy(name) {
     this.name = getRandomElement(enemyTypes);
     this.hp = Math.floor(Math.random() * 31) + 50;
-    this.magicSpheres = getRandomElement(magicSpheres);
+    this.magicSpheres = getRandomElement(MagicSpheres);
 }
 
 
 //GAME LOOP\\
-
 var name = readlineSync.question("What is Your Name?, Child of the Great Spirit.\n");
 console.log("Hello " + name + " Your quest awaits you ~ ~ ~ ~ \n")
-var player1 = new Player(name);
+var hp = readlineSync.question("Give yourself HP and Begin.\n")
+var player1 = new Player(name, hp);
 while (true) {
     var isWalking = readlineSync.keyInYN("Would you like to start Walking? \n ");
     console.log("Walking")
     if (isWalking) {
-        var encountersEnemy = Math.random() < .45;
+        var encountersEnemy = Math.random() < .333;
         if (encountersEnemy === false) {
             console.log("keep going") }
             var enemy = new Enemy();
             console.log("you encountered " + enemy.name + "!");
-            var fight = rs.keyInYN("Stand and Fight? \n");
-            if (fight) {
+            var fight = readlineSync.keyInYN("Stand and Fight? \n");
+            while (fight) {
                 switch (true) {
                     case (player1.hp <= 0): 
                         console.log("You have Died")
@@ -64,6 +66,7 @@ while (true) {
                     enemy.attack(player1);
                     console.log(enemy.hp)
                     console.log(player1.hp)
+                    break;
                 }
                 //handle fight sequence
                 //use while loop to iterate until either the enemy hp or player hp is <= 0 
