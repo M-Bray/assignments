@@ -8,7 +8,7 @@ import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div>
+    <div className="site-wrap">
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
