@@ -8,7 +8,7 @@ function Header() {
       <p className="intro-par">
         Here you can reveal hidden secrets from within an image.
       </p>
-      <h2 className="">Give it a Go!</h2>
+      <h2 className="header-exit">Give it a Go!</h2>
     </div>
   )
 }
