@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
-import './App.css';
-import Nav from './Nav';
+import React from 'react'
+import Nav from './Nav'
+import Footer from './Footer'
+import Home from './Home'
+import Help from './Help'
 
 import { Switch, Route } from "react-router-dom";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="site-wrap">
-        <Nav />
-        <Switch>
+function App() {
+  return (
+    <div>
+      <Nav />
+      <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/help" component={Help} />
       </Switch>
-      </div>
-    )
-  }
+      <Footer />
+    </div>
+  )
 }
 
-export default App;
+export default App

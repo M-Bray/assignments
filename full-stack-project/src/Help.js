@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Help = () => {
-  return(
+function Help() {
+  return (
     <div>
-      
+      <h1>help</h1>
     </div>
   )
 }
 
-
-export default Help
+ export default Help
