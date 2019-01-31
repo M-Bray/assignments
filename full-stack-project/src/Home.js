@@ -3,7 +3,7 @@ import Header from './Header'
 
 function Home() {
   return (
-    <div>
+    <div className="home-wrap">
       <Header />
     </div>
   )
