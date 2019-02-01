@@ -3,13 +3,10 @@
   box-sizing: border-box;
 }
 
-html body {
+html, body {
   width: 100vw;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin: 0;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("https://images.pexels.com/photos/136419/pexels-photo-136419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .siteWrap {
@@ -17,45 +14,63 @@ html body {
   justify-content: center;
   width: 100vw;
   text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("https://images.pexels.com/photos/136419/pexels-photo-136419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
-.navTab {
+.nav-tab:before {
+  content: " ";
+  width: auto;
+  height: auto;
+  background: inherit;
+  position: absolute;
+  left: -25px; 
+  right: 0;
+  top: -25px; 
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(156, 168, 177, 0.288);
+  filter: blur(9px);
+}
+
+.nav-tab {
+  background: inherit;
   display: flex;
+  justify-content: space-around;
   position: fixed;
   margin-top: 6px;
   width: 99vw;
   height: 85px;
-  top: 1%;
   border-radius: 2px;
   align-items: center;
-  background-color: rgba(216, 216, 216, 0.821);
-  box-shadow: 0px 0px .1px rgb(0, 0, 0);
+  overflow: hidden;
 }
 
-.navButtons {
-  color: black;
+.nav-buttons {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  font-size: 1.6em;
+  color: rgb(170, 170, 170);
   text-decoration: none;
-  font-size: 100%;
-  width: 13%;
-  /* padding: 2px; */
-  margin: 9px;
-  border-color: rgba(80, 140, 184);
-  transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
-  background-color: rgba(80, 140, 184);
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
+  transition: color .25s ease-in-out, text-shadow .25s ease-in-out;
   border-radius: 2px;
-  padding: 1%;
+
 }
 
-.navButtons:hover {
+.nav-buttons:hover {
+  position: relative;
   cursor: pointer;
-  box-shadow: 6px 10px 7px -5px black;
-  background-color: rgba(80, 140, 184, 0.756);
+  text-shadow: 0px 0px 4px rgb(214, 214, 214);
+  color: rgb(221, 221, 221);
 }
 
-.navButtons:active {
+.nav-buttons:active {
   cursor: pointer;
-  box-shadow: 0px 0px 0px 0px black;
-  background-color: rgba(56, 99, 129, 0.756);
+  text-shadow: 0px 0px 4px black;
 }
 
 .headerClass {
@@ -63,7 +78,7 @@ html body {
   display: flex;
   width: 99vw;
   flex-direction: column;
-  background-color: rgba(216, 216, 216, 0.821);
+  background-color: rgba(156, 168, 177, 0.562);
   border-radius: 2px;
   box-shadow: 0px 0px .1px rgb(0, 0, 0);
 }

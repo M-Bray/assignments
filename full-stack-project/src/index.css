@@ -16,7 +16,10 @@ html body {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background: rgb(136, 137, 161);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/5842/people-vintage-photo-memories.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
 }
 
 .nav-tab:before {
@@ -135,9 +138,9 @@ html body {
 }
 
 .footer-par {
-
+  margin-right: 55px;
 }
 
 .footer-copyright {
-
+  margin-left: 55px;
 }
