@@ -16,10 +16,7 @@ html body {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-image: url("https://images.pexels.com/photos/5842/people-vintage-photo-memories.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: rgb(136, 137, 161);
 }
 
 .nav-tab:before {
@@ -40,7 +37,6 @@ html body {
   background: inherit;
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   position: fixed;
   margin-top: 6px;
   width: 99vw;
@@ -71,15 +67,30 @@ html body {
   color: rgb(221, 221, 221);
 }
 
-
+.header-wrap::before {
+  content: " ";
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: -25px; 
+  right: 0;
+  top: -25px; 
+  bottom: 0;
+  box-shadow: inset 0 0 0 200px rgba(100, 99, 99, 0.26);
+  filter: blur(10px);
+}
 
 .header-wrap {
+  background: inherit;
   margin-top: 120px;
   display: flex;
   position: relative;
   width: 99vw;
+  align-items: center;
   flex-direction: column;
   border-radius: 2px;
+  background: inherit;
+  overflow: hidden;
 }
 
 .title-header {
@@ -124,9 +135,9 @@ html body {
 }
 
 .footer-par {
-  margin-right: 55px;
+
 }
 
 .footer-copyright {
-  margin-left: 55px;
+
 }
