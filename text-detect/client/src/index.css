@@ -138,7 +138,9 @@ html, body {
 
 .article-wrap {
   display: grid;
-  
+  width: auto;
+  height: 100vh;
+  margin-top: 8em;
 
 }
 .article-header {
