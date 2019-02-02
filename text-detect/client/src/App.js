@@ -7,7 +7,7 @@ import Quality from './Quality'
 import { Switch, Route } from "react-router-dom";
 
 
-function App() {
+const App = () => {
   return (
     <div className="site-wrap">
       <Nav />
@@ -18,6 +18,9 @@ function App() {
       <Footer />
     </div>
   )
+
+  
 }
+
 
 export default App

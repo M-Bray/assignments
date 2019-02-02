@@ -26,7 +26,7 @@ export default class VisionData extends Component {
   render() {
     return (
       <div className="data-div">
-        <img onClick={this.handleClick} className="img-example" src='https://media.npr.org/assets/img/2016/04/17/handwritten-note_wide-941ca37f3638dca912c8b9efda05ee9fefbf3147.jpg?s=1400' alt="A Hand Written Note" />
+        <img onClick={this.handleClick} className="img-example" src='https://i.ytimg.com/vi/1OTP7rEPjn4/maxresdefault.jpg' alt="Eagle snacking on a baby cheetah" />
         {this.state.hasLoaded && <p className="data-par">{this.state.text}</p>}
       </div>
     )

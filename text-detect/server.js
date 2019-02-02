@@ -15,7 +15,7 @@ app.get('/vision', (req, res) => {
   console.log("Testing")
 
   client
-  .documentTextDetection('./tmp/handwritten-note.jpg')
+  .textDetection('tmp/eagle-snakcing-on-cheetah.jpg')
   .then(results => {    
     res.send(results)
   })
