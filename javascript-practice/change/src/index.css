@@ -1,0 +1,19 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+h1 {
+  background-color: cornsilk;
+  color: darkgreen;
+}
+
+button {
+  background-color: darkgray;
+  font-size: 3em;
+  border-radius: 4px;
+}
