@@ -9,7 +9,7 @@ const Quality = () => {
         <p>Our team consists of a </p>
       </div>
       <div>
-        <h2>We provide a service that allows you to extract and transcribe text from images.</h2>
+        <h2>We provide a service that allows </h2>
           <ul>Hand-Written Notes</ul>
           <li>Now you can take a picture with your phone, or upload an already saved photo, of a hand written note and easily make it reusable in any way you see fit.</li>
           <lu>Documents</lu>
