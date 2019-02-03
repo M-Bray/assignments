@@ -2,23 +2,26 @@
     box-sizing: border-box;
     font-size: 0px;
 }
+
 #dkHeader {
     margin: auto;
     height: 302px;
-    width: 750px;
+    width: 52.1vw;
     background-image: url("Donkey-Kong-Country.jpeg");
     background-size: 750px 302px;
     border-radius: 1px;
 }
+
 .dkTitle {
     margin: auto;
     padding: 10px;
     font-size: 40px;
     color: #f05a15;
-    font-weight: bold; 
+    font-weight: bold;
     text-align: center;
-    position: relative; 
+    position: relative;
 }
+
 #donkeyTitle {
     width: 320px;
     height: 73px;
@@ -26,12 +29,14 @@
     top: 0px;
     background-color: #01521c;
 }
+
 #pestTitle {
     width: 190px;
     padding: 2px;
     left: 280px;
     top: -70px;
 }
+
 #start {
     margin: auto;
     font-size: 40px;
@@ -45,12 +50,14 @@
     opacity: .8;
     border-radius: 2px;
 }
+
 #start:hover {
     cursor: text;
     opacity: 1;
     cursor: pointer;
     border-color: black;
 }
+
 .dkImg {
     width: 110px;
     height: 110px;
@@ -58,17 +65,22 @@
     background-position: center;
     display: inline-block;
 }
+
 body {
     width: 100%;
     height: 500px;
     background-color: grey;
 }
+
 .dkBlock {
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    width: 750px;
-    height: 80%;
+    width: 52.1vw;
+    height: 100%;
     background-color: rgba(36, 107, 48, 0.329);
 }
+
 #spinBanana {
     margin: auto;
     display: inline-block;
@@ -77,19 +89,19 @@ body {
     width: 20px;
     height: 45px;
 }
+
 .characterDiv {
     margin: 15px;
     width: 100%;
 }
+
 #payBox {
     margin: auto;
     width: 355px;
     height: 75px;
     display: inline-block;
     position: absolute;
-    right: 4px;
-    top: px;
-    top: 7px;
+    right: -18px;
     text-align: center;
     font-size: 30px;
     border-radius: 20px;
@@ -97,6 +109,31 @@ body {
     background-color: #f05a15;
     opacity: .8;
 }
+
+.button-input {
+    position: absolute;
+    width: 50%;
+    height: 51%;
+    flex-direction: column;
+    top: 323px;
+}
+
+#totalButton {
+    top: 90px;
+    left: 503px;
+    position: relative;
+    font-size: 25px;
+    border-radius: 7px;
+    color: #000000;
+    background-color: #f05a15;
+    opacity: .8;
+}
+
+#totalButton:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
 .dkInput {
     margin: auto;
     width: 40px;
@@ -105,39 +142,24 @@ body {
     color: #000000;
     border-color: #006622;
 }
+
 .divChild {
     margin: auto;
     display: inline-block;
 }
+
 h1 {
     font-size: 25px;
 }
+
 #dkFooter {
     margin: auto;
     width: 750px;
     height: 50px;
     background-color: #05642c8e;
 }
+
 #jk {
     font-size: 20px;
     color: black;
-}
-#totalButton {
-    margin: auto;
-    width: 240px;
-    height: 40px;
-    display: inline-block;
-    position: absolute;
-    right: 107px;
-    top: 90px;
-    text-align: center;
-    font-size: 25px;
-    border-radius: 7px;
-    color: #000000;
-    background-color: #f05a15;
-    opacity: .8;
-}
-#totalButton:hover {
-    opacity: 1;
-    cursor: pointer;
 }
