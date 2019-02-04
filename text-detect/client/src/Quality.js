@@ -11,7 +11,7 @@ const Quality = () => {
       <div>
         <h2>We provide a service that allows </h2>
           <ul>Hand-Written Notes</ul>
-          <li>Now you can take a picture with your phone, or upload an already saved photo, of a hand written note and easily make it reusable in any way you see fit.</li>
+          <li>Now you can ta</li>
           <lu>Documents</lu>
           <li>Images of documents can now be easily transcribed into text.</li>
         <ul>Mood Detection</ul>

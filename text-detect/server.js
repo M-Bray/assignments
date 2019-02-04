@@ -19,10 +19,22 @@ app.get('/vision', (req, res) => {
   .then(results => {    
     res.send(results)
   })
+
   .catch(err => {
     console.error('ERROR:', err);
   });
 
+})
+
+app.get('/labels', (req, res) => {
+
+  console.log("Testing Labels")
+
+  client
+  .labelDetection('https://media.npr.org/assets/img/2016/04/17/handwritten-note_wide-941ca37f3638dca912c8b9efda05ee9fefbf3147.jpg?s=1400')
+  .then(results => {
+    res.send(results)
+  })
 })
 
 app.listen(8000, () => {

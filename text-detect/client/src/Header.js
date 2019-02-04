@@ -7,7 +7,7 @@ const Header = () => {
       <h1 className="title-header">Photo Bomb</h1>
       <h4 className="welcome-header"><i>A Picture Says a Thousand Words</i></h4>
       <p className="intro-par">
-        Here you can identify and extract text from within an image.
+        Here you can reveal hidden secrets from within an image.
       </p>
       <h2 className="header-closing">Give it a Go!</h2>
     </header>

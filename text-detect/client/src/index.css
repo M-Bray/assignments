@@ -135,7 +135,6 @@ html, body {
   border-radius: 4px;
 }
 
-
 .article-wrap {
   display: grid;
   width: auto;
@@ -143,19 +142,6 @@ html, body {
   margin-top: 8em;
 
 }
-.article-header {
-
-}
-.article-par {
-
-}
-.article-img {
-
-}
-.article-header {
-
-}
-
 
 /* FOOTER */
 
