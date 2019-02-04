@@ -31,7 +31,7 @@ app.get('/labels', (req, res) => {
   console.log("Testing Labels")
 
   client
-  .labelDetection('https://media.npr.org/assets/img/2016/04/17/handwritten-note_wide-941ca37f3638dca912c8b9efda05ee9fefbf3147.jpg?s=1400')
+  .labelDetection('http://andrahem.com/354/wild-party-girls-naked.jpg')
   .then(results => {
     res.send(results)
   })

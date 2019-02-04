@@ -13,11 +13,12 @@ html, body {
   display: flex;
   justify-content: center;
   width: 100vw;
+  height: 100vh;
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-color: #fff;
+  background: url("https://isorepublic.com/wp-content/uploads/2018/11/cord-fabric-1100x733.jpg")
 }
 
 .nav-tab:before {
@@ -26,18 +27,16 @@ html, body {
   height: auto;
   background: inherit;
   position: absolute;
-  left: -25px;
+  left: 0;
   right: 0;
   top: -25px;
-  bottom: 0;
+  bottom: -5px;
   box-shadow: inset 0 0 0 200px rgba(156, 168, 177, 0.288);
   filter: blur(9px);
 }
 
 .nav-tab {
-  grid-area: nav;
   background-color: #f5f8fa;
-  border: 1px solid #d3d4d4;
   background: inherit;
   display: flex;
   justify-content: space-around;
@@ -114,6 +113,7 @@ html, body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
+  background: inherit;
 }
 
 .img-example {
