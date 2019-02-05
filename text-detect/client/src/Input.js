@@ -1,10 +1,10 @@
 import React from 'react'
 
-function Input() {
+function Input(props) {
   return (
-    <form>
+    <form className="image-form">
       <input id="pic-input" type="file" name="pic" accept="image/*"></input>
-      <input type="submit"></input>
+      <button  onClick={props.photoClick} type="button"></button>
     </form>
   )
 }

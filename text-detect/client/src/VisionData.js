@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios'
+import Input from './Input';
+
 
 export default class VisionData extends Component {
   constructor() {
@@ -7,10 +9,12 @@ export default class VisionData extends Component {
     this.state = {
       text: "",
       labels: [],
+      photos: [],
       hasLoaded: false,
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleLabelClick = this.handleLabelClick.bind(this)
+    this.handlePhotoSubmit = this.handlePhotoSubmit.bind(this)
   }
 
   getVisionData() {
@@ -35,11 +39,21 @@ export default class VisionData extends Component {
       })
   }
 
+  handlePhotoSubmit(e) {
+    e.preventDefault()
+    this.setState({ photos: e.target.files[0] })
+    const fd = new FormData({
+      body: this.state.photos
+    })
+    axios.post("./photos", fd)
+  }
+
   render() {
-    
+
     return (
       <div className="data-div">
         <img onClick={this.handleLabelClick} className="img-example" src="https://i.pinimg.com/originals/f9/ca/af/f9caaf61928068c980caa33ba3d28f27.jpg" alt="kundilini meditation" />
+        <Input photoClick={this.handlePhotoSubmit} />
         <div>{this.state.labels.map(label => {
           return (
             <div>

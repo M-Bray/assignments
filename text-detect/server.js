@@ -1,6 +1,7 @@
 const express = require('express');
 const vision = require('@google-cloud/vision');
 const fs = require('fs');
+const database = require("./Schema")
 require('dotenv').config();
 
 //GOOGLE VISION API
@@ -35,6 +36,13 @@ app.get('/labels', (req, res) => {
   .then(results => {
     res.send(results)
   })
+})
+
+app.post('/photos', (req, res) => {
+
+  console.log("Testing Photos")
+  console.log(req.body)
+
 })
 
 app.listen(8000, () => {
