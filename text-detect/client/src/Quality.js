@@ -9,13 +9,7 @@ const Quality = () => {
         <p>Our team consists of a </p>
       </div>
       <div>
-        <h2>We provide a service that allows </h2>
-          <ul>Hand-Written Notes</ul>
-          <li>Now you can ta</li>
-          <lu>Documents</lu>
-          <li>Images of documents can now be easily transcribed into text.</li>
-        <ul>Mood Detection</ul>
-        <ul></ul>
+        <h1>What the fuck Am I doing here</h1>
       </div>
       <div>
         <h1>Our Customer</h1>

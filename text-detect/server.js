@@ -31,7 +31,7 @@ app.get('/labels', (req, res) => {
   console.log("Testing Labels")
 
   client
-  .labelDetection('https://nationalinterest.org/sites/default/files/styles/desktop__1486_x_614/public/main_images/1280px-SR-71A_in_flight_near_Beale_AFB_1988.jpeg?itok=zkrTw5cZ')
+  .labelDetection('https://i.pinimg.com/originals/f9/ca/af/f9caaf61928068c980caa33ba3d28f27.jpg')
   .then(results => {
     res.send(results)
   })
