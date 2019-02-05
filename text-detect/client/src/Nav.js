@@ -7,7 +7,6 @@ function Nav(props) {
       <Link to="/" className="nav-buttons" >Home</Link>
       <Link to="/quality" className="nav-buttons" >Quality</Link>
       <Link to="/article" className="nav-buttons" >Article</Link>
-      <div className="layer"></div>
     </nav>
   )
 }

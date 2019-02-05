@@ -15,9 +15,9 @@ html, body {
   width: 100vw;
   height: 100%;
   text-align: center;
-  background: url("https://images.pexels.com/photos/1638044/pexels-photo-1638044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-color: whitesmoke;
   background-position: center;
-  background-size: cover;
+  background-size: auto;
 }
 
 .nav-tab:before {
@@ -35,7 +35,6 @@ html, body {
 }
 
 .nav-tab {
-  background: inherit;
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -107,28 +106,25 @@ html, body {
 }
 
 .data-div {
-  margin-top: 20px;
-  margin-bottom: 0px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
-  background: inherit;
+  align-content: flex-start;
+  align-items: flex-start;
+
+  background-size: cover;
 }
 
 .img-example {
   cursor: pointer;
-  width: 50%;
+  width: auto;
   box-shadow: 0px 0px 5px black;
-  margin-bottom: 55px;
 }
 
 .data-par {
   display: flex;
+  align-content: space-between;
+  justify-content: center;
   padding: 5%;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 150%;
+  font-size: 1em;
   background-color: rgba(216, 216, 216, 0.821);
   text-shadow: 0px 0px .03px rgb(60, 255, 0);
   box-shadow: 0px 0px .1px rgb(0, 0, 0);

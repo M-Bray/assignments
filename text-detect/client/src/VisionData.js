@@ -23,17 +23,17 @@ export default class VisionData extends Component {
         console.log(response.data[0].fullTextAnnotation.text)
         this.setState({ text: response.data[0].fullTextAnnotation.text, hasLoaded: true })
       })
-    }
-    
-    handleLabelClick() {
-      axios.get("/labels")
+  }
+
+  handleLabelClick() {
+    axios.get("/labels")
       .then(response => {
         console.log(response.data[0].labelAnnotations)
         const labels = response.data[0].labelAnnotations
         const hasLoaded = true
         this.setState({ labels, hasLoaded })
       })
-}
+  }
 
   render() {
     return (
@@ -42,10 +42,10 @@ export default class VisionData extends Component {
         <div>{this.state.labels.map(label => {
           return (
             <div>
-              {this.state.hasLoaded && <p className="data-par">{label.description}</p>}
+              {this.state.hasLoaded && <p className="data-par"> {Math.floor(label.score * 100)} - {label.description} </p>}
             </div>
           )
-          })}
+        })}
         </div>
 
       </div>
