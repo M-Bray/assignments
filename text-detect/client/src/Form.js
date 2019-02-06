@@ -6,7 +6,7 @@ function Form(props) {
     <FileUploader>
       {({ setInputRef, getFileInput }) => (
         <form className="image-form" >
-          <input onChange={e => {
+          <input className="input-class" onChange={e => {
             const input = getFileInput()
             const file = input.files[0];
             props.sendFile(file)

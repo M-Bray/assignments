@@ -50,7 +50,7 @@ export default class VisionData extends Component {
               <div className="data-par" key={photo._id}>
                 <img className="img-example" src={`/photos/${photo.filename}`} alt="" />
                 <p className="data-name">{photo.originalname}</p>
-                {photo.textAnnotations && <p>Text Annotation: {photo.textAnnotations}</p>}
+                {photo.textAnnotations && <p> <b>Text Annotation:</b> {photo.textAnnotations}</p>}
                 {photo.labelAnnotations.map(annotation => {
                   return (
                     <div className="data-par" key={annotation._id}>
