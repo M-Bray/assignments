@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios'
-import Input from './Input';
+import Form from './Form';
 
 
 export default class VisionData extends Component {
@@ -53,7 +53,7 @@ export default class VisionData extends Component {
     return (
       <div className="data-div">
         <img onClick={this.handleLabelClick} className="img-example" src="https://i.pinimg.com/originals/f9/ca/af/f9caaf61928068c980caa33ba3d28f27.jpg" alt="kundilini meditation" />
-        <Input photoClick={this.handlePhotoSubmit} />
+        <Form photoClick={this.handlePhotoSubmit} />
         <div>{this.state.labels.map(label => {
           return (
             <div>
