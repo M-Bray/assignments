@@ -6,74 +6,59 @@ export default class VisionData extends Component {
   constructor() {
     super()
     this.state = {
-      text: "",
-      labels: [],
       photos: [],
-      images: null,
-      fileName: null,
-      hasLoaded: false,
     }
-    this.handleClick = this.handleClick.bind(this)
-    this.handleLabelClick = this.handleLabelClick.bind(this)
-    this.onInputChange = this.onInputChange.bind(this)
+    this.sendFile = this.sendFile.bind(this)
   }
-
+  componentDidMount() {
+    this.getVisionData()
+  }
   getVisionData() {
-    return axios.get('/vision')
-  }
-
-  handleClick() {
-    axios.get("/vision")
+    return axios.get('/photos')
       .then(response => {
-        console.log(response.data[0].fullTextAnnotation.text)
-        this.setState({ text: response.data[0].fullTextAnnotation.text, hasLoaded: true })
+        this.setState({
+          photos: response.data
+        })
       })
   }
 
-  handleLabelClick() {
-    axios.get("/labels")
-      .then(response => {
-        console.log(response.data[0].labelAnnotations)
-        const labels = response.data[0].labelAnnotations
-        const hasLoaded = true
-        this.setState({ labels, hasLoaded })
-      })
-  }
+  sendFile(file) {
+    const formData = new FormData(file);
+    formData.append('photo', file)
 
-  onInputChange(e) {
-    const files = Array.from(e.target.files)
-    const formData = new FormData()
-
-    files.forEach((file, i) => {
-      formData.append("photo", file)
-    })
-    const photoName = fetch("/photos", {
+    fetch("/photos", {
       method: 'POST',
       body: formData
     })
-      .then(res => res)
-      .then(images => {
-        this.setState({
-          images: images.file
-        })
+      .then(response => {
+        return response.json()
       })
-      console.log(photoName)
-  }
-
-  getFileName() {
-    axios.get()
+      .then(image => {
+        this.setState(ps => ({
+          photos: [...ps.photos, image]
+        }))
+      })
   }
 
   render() {
     return (
       <div className="data-wrap">
         <div className="data-div">
-          <img onClick={this.handleLabelClick} className="img-example" src={`/photos/handwritten-note.jpg/${this.state.fileName}`} alt="kundilini meditation" />
-          <Form send={this.onInputChange} />
-          <div>{this.state.labels.map(label => {
+          <Form sendFile={this.sendFile} />
+          <div>{this.state.photos.map(photo => {
             return (
-              <div>
-                {this.state.hasLoaded && <p className="data-par"> {Math.floor(label.score * 100)} - {label.description}</p>}
+              <div className="data-par" key={photo._id}>
+                <img className="img-example" src={`/photos/${photo.filename}`} alt="" />
+                <p className="data-name">{photo.originalname}</p>
+                {photo.textAnnotations && <p>Text Annotation: {photo.textAnnotations}</p>}
+                {photo.labelAnnotations.map(annotation => {
+                  return (
+                    <div className="data-par" key={annotation._id}>
+                      <p>{annotation.description}</p>
+                      <p>{(annotation.score * 100).toLocaleString({ maximumFractionDigits: 1 }) + '%'}</p>
+                    </div>
+                  )
+                })}
               </div>
             )
           })}

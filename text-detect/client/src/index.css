@@ -28,9 +28,9 @@ body {
   background-position-x: 83%;
   background-position-y: 32%;
   background-size: cover;
-
 }
 
+/* Nav Bar */
 .nav-tab:before {
   content: " ";
   width: auto;
@@ -48,7 +48,8 @@ body {
 .nav-tab {
   display: flex;
   background: inherit;
-  justify-content: flex-start;
+  justify-content: space-around;
+  float: left;
   position: fixed;
   width: 80vw;
   height: 50px;
@@ -87,7 +88,7 @@ body {
 .search-bar {
   font-size: 22px;
   width: auto;
-  left: 204px;
+  left: 58px;
   border: none;
   position: relative;
   margin-left: 45px;
@@ -95,7 +96,6 @@ body {
   padding: 0;
   color: rgb(5, 5, 5);
   background-color: rgb(182, 182, 182);
-  text-decoration-line: none;
   transition: background-color .25s ease-in-out, text-shadow .15s ease-in-out, color .25s ease-in-out;
   border-radius: 2px;
 }
@@ -107,9 +107,10 @@ body {
 
 }
 
+/* Header */
 .header-wrap {
   width: 80vw;
-  height: 255px;
+  height: 290px;
   background: url("https://images.pexels.com/photos/977736/pexels-photo-977736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-size: cover;
@@ -132,6 +133,7 @@ body {
   text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
+/* Home  */
 .intro-par {
   font-size: 25px;
   margin: 2%;
@@ -150,12 +152,11 @@ body {
   text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
+/* Article Image Upload */
 .data-wrap {
-  display: grid;
-  top: 50px;
+  display: flex;
   position: relative;
   width: 80vw;
-  height: 205px;
 }
 
 .data-div {
@@ -166,7 +167,9 @@ body {
 .img-example {
   grid-area: img;
   cursor: pointer;
-  width: 200px;
+  width: 20%;
+  height: 20%;
+  background-color: antiquewhite;
   box-shadow: 0px 0px 5px black;
 }
 
@@ -174,13 +177,15 @@ body {
   display: flex;
   width: auto;
   align-content: space-between;
-  justify-content: center;
-  padding: 5%;
   font-size: 1em;
   background-color: rgba(179, 179, 179, 0.821);
   text-shadow: 0px 0px .03px rgb(60, 255, 0);
   box-shadow: 0px 0px .1px rgb(0, 0, 0);
-  border-radius: 4px;
+  border-radius: 2px;
+}
+
+.data-name {
+  
 }
 
 .image-form {
