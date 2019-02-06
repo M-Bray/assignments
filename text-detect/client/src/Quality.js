@@ -3,7 +3,7 @@ import React from 'react'
 
 const Quality = () => {
   return (
-    <div className="quality-div">
+    <div className="header-wrap">
       <div>
         <h3>Our Team</h3>
         <p>Our team consists of a </p>

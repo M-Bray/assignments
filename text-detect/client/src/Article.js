@@ -3,7 +3,7 @@ import VisionData from './VisionData'
 
 const Article = () => {
   return (
-    <div className="article-wrap">
+    <div className="header-wrap">
       <VisionData />
     </div>
   )

@@ -66,16 +66,18 @@ export default class VisionData extends Component {
 
   render() {
     return (
-      <div className="data-div">
-        <img onClick={this.handleLabelClick} className="img-example" src={`/photos/handwritten-note.jpg/${this.state.fileName}`} alt="kundilini meditation" />
-        <Form send={this.onInputChange} />
-        <div>{this.state.labels.map(label => {
-          return (
-            <div>
-              {this.state.hasLoaded && <p className="data-par"> {Math.floor(label.score * 100)} - {label.description}</p>}
-            </div>
-          )
-        })}
+      <div className="data-wrap">
+        <div className="data-div">
+          <img onClick={this.handleLabelClick} className="img-example" src={`/photos/handwritten-note.jpg/${this.state.fileName}`} alt="kundilini meditation" />
+          <Form send={this.onInputChange} />
+          <div>{this.state.labels.map(label => {
+            return (
+              <div>
+                {this.state.hasLoaded && <p className="data-par"> {Math.floor(label.score * 100)} - {label.description}</p>}
+              </div>
+            )
+          })}
+          </div>
         </div>
       </div>
     )
