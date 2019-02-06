@@ -1,7 +1,8 @@
 const express = require('express');
 const vision = require('@google-cloud/vision');
 const fs = require('fs');
-const database = require("./Schema")
+const database = require("./Schema");
+const multer = require("multer");
 require('dotenv').config();
 
 //GOOGLE VISION API
@@ -10,6 +11,9 @@ const client = new vision.ImageAnnotatorClient();
 const app = express();
 
 app.use(express.json(), express.urlencoded());
+
+const upload = multer({ dest: __dirname + "/tmp"})
+const type = upload.single("photo")
 
 app.get('/vision', (req, res) => {
 
@@ -38,13 +42,23 @@ app.get('/labels', (req, res) => {
   })
 })
 
-app.post('/photos', (req, res) => {
+app.post('/photos', type, (req, res) => {
+  console.log(req.body, req.file)
+
+  const newPhoto = new database({
+    fileName: req.file.filename
+  })
+  newPhoto.save()
+  res.send(req.file.filename)
 
   console.log("Testing Photos")
   console.log(req.body)
 
 })
 
+app.use(express.static("/tmp"))
+
 app.listen(8000, () => {
   console.log('Server Listening')
 })
+

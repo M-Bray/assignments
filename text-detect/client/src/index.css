@@ -111,7 +111,7 @@ body {
 
 .data-div {
   display: flex;
-  flex-direction: column;
+
   align-content: flex-start;
   align-items: flex-start;
   background-size: cover;

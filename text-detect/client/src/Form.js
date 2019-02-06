@@ -9,9 +9,10 @@ function Form(props) {
           e.preventDefault()
           const input = getFileInput()
           const file = input.files[0]
+          props.send(file)
+          {/* send file to server from here */}
         }}>
-          <input name="file" type="file" ref={setInputRef} />
-          <button>Upload</button>
+          <input onChange={props.send} name="file" type="file" ref={setInputRef} />
         </form>
       )}
     </FileUploader>

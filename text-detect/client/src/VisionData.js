@@ -10,11 +10,13 @@ export default class VisionData extends Component {
       text: "",
       labels: [],
       photos: [],
+      images: null,
       hasLoaded: false,
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleLabelClick = this.handleLabelClick.bind(this)
-    this.handlePhotoSubmit = this.handlePhotoSubmit.bind(this)
+    this.onInputChange = this.onInputChange.bind(this)
+
   }
 
   getVisionData() {
@@ -39,13 +41,24 @@ export default class VisionData extends Component {
       })
   }
 
-  handlePhotoSubmit(e) {
-    e.preventDefault()
-    this.setState({ photos: e.target.files[0] })
-    const fd = new FormData({
-      body: this.state.photos
+  onInputChange(e) {
+    const files = Array.from(e.target.files)
+    const formData = new FormData()
+
+    files.forEach((file, i) => {
+      formData.append("photo", file )
     })
-    axios.post("./photos", fd)
+
+    fetch("/photos", {
+      method: 'POST',
+      body: formData
+    })
+      .then(res => res)
+      .then(images => {
+        this.setState({
+          images
+        })
+      })
   }
 
   render() {
@@ -53,7 +66,7 @@ export default class VisionData extends Component {
     return (
       <div className="data-div">
         <img onClick={this.handleLabelClick} className="img-example" src="https://i.pinimg.com/originals/f9/ca/af/f9caaf61928068c980caa33ba3d28f27.jpg" alt="kundilini meditation" />
-        <Form photoClick={this.handlePhotoSubmit} />
+        <Form send={this.onInputChange} />
         <div>{this.state.labels.map(label => {
           return (
             <div>
