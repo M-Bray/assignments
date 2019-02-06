@@ -13,15 +13,22 @@ body {
   margin: 0;
 }
 
+.app-wrap {
+  width: 80vw;
+  height: 100vh;
+  background-color: rgb(165, 165, 165);
+}
+
 .site-wrap {
   display: flex;
   justify-content: center;
   width: 80vw;
-  height: 100vh;
   text-align: center;
-  background-color: rgb(124, 124, 124);
-  background-position: center;
-  background-size: auto;
+  background: url("https://images.pexels.com/photos/977736/pexels-photo-977736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position-x: 83%;
+  background-position-y: 32%;
+  background-size: cover;
+
 }
 
 .nav-tab:before {
@@ -34,30 +41,31 @@ body {
   right: 0;
   top: -25px;
   bottom: -5px;
-  box-shadow: inset 0 0 0 200px rgba(156, 168, 177, 0.288);
+  box-shadow: inset 0 0 0 200px rgba(86, 90, 94, 0.288);
   filter: blur(9px);
 }
 
 .nav-tab {
   display: flex;
-  justify-content: space-around;
+  background: inherit;
+  justify-content: flex-start;
   position: fixed;
   width: 80vw;
-  height: 85px;
+  height: 50px;
   border-radius: 2px;
   align-items: center;
   overflow: hidden;
 }
 
 .nav-buttons {
-  z-index: 20;
   position: relative;
-  margin: 0;
+  margin-left: 45px;
+  margin-right: 45px;
   padding: 0;
   width: auto;
   font-size: 1.6em;
   color: rgb(170, 170, 170);
-  text-decoration: none;
+  text-decoration-line: none;
   text-shadow: 0px 0px 1px rgb(0, 0, 0);
   transition: color .25s ease-in-out, text-shadow .25s ease-in-out;
   border-radius: 2px;
@@ -76,42 +84,74 @@ body {
   text-shadow: 0px 0px 4px black;
 }
 
+.search-bar {
+  font-size: 22px;
+  width: auto;
+  left: 204px;
+  border: none;
+  position: relative;
+  margin-left: 45px;
+  margin-right: 45px;
+  padding: 0;
+  color: rgb(5, 5, 5);
+  background-color: rgb(182, 182, 182);
+  text-decoration-line: none;
+  transition: background-color .25s ease-in-out, text-shadow .15s ease-in-out, color .25s ease-in-out;
+  border-radius: 2px;
+}
+
+.search-bar:hover {
+  color: black;
+  background-color: rgb(163, 163, 163);
+  text-shadow: 0px 0px 2px rgb(204, 204, 204);
+
+}
+
+.header-wrap {
+  width: 80vw;
+  height: 255px;
+  background: url("https://images.pexels.com/photos/977736/pexels-photo-977736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: center;
+  background-size: cover;
+}
+
 .header-class {
-  margin-top: 120px;
+  margin-top: 30px;
   display: flex;
   width: auto;
   flex-direction: column;
-  background-color: rgba(156, 168, 177, 0.562);
   border-radius: 2px;
-  box-shadow: 0px 0px .1px rgb(0, 0, 0);
 }
 
 .title-header {
+  color: rgb(189, 189, 189);
   margin-top: 2%;
   margin-bottom: 1%;
   font-size: 50px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  text-shadow: 0px 0px 2px rgb(78, 139, 182);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
 .intro-par {
   font-size: 25px;
   margin: 2%;
-  text-shadow: 0px 0px .03px rgba(103, 172, 91);
+  color: rgb(190, 190, 190);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 .welcome-header {
-  text-shadow: 0px 0px .03px rgba(103, 172, 91);
+  color: rgb(218, 218, 218);
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
 }
 
 .header-closing {
   margin-bottom: 2%;
-  text-shadow: 0px 0px .03px rgba(103, 172, 91);
+  color: rgb(179, 179, 179);
+  text-shadow: 0px 0px 2px rgb(0, 0, 0);
 }
 
 .data-div {
   display: flex;
-
   align-content: flex-start;
   align-items: flex-start;
   background-size: cover;
