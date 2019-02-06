@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import Form from './Form';
 
-
 export default class VisionData extends Component {
   constructor() {
-    super();
+    super()
     this.state = {
       text: "",
       labels: [],
       photos: [],
       images: null,
+      fileName: null,
       hasLoaded: false,
     }
     this.handleClick = this.handleClick.bind(this)
     this.handleLabelClick = this.handleLabelClick.bind(this)
     this.onInputChange = this.onInputChange.bind(this)
-
   }
 
   getVisionData() {
@@ -46,26 +45,29 @@ export default class VisionData extends Component {
     const formData = new FormData()
 
     files.forEach((file, i) => {
-      formData.append("photo", file )
+      formData.append("photo", file)
     })
-
-    fetch("/photos", {
+    const photoName = fetch("/photos", {
       method: 'POST',
       body: formData
     })
       .then(res => res)
       .then(images => {
         this.setState({
-          images
+          images: images.file
         })
       })
+      console.log(photoName)
+  }
+
+  getFileName() {
+    axios.get()
   }
 
   render() {
-
     return (
       <div className="data-div">
-        <img onClick={this.handleLabelClick} className="img-example" src="https://i.pinimg.com/originals/f9/ca/af/f9caaf61928068c980caa33ba3d28f27.jpg" alt="kundilini meditation" />
+        <img onClick={this.handleLabelClick} className="img-example" src={`/photos/handwritten-note.jpg/${this.state.fileName}`} alt="kundilini meditation" />
         <Form send={this.onInputChange} />
         <div>{this.state.labels.map(label => {
           return (
@@ -75,7 +77,6 @@ export default class VisionData extends Component {
           )
         })}
         </div>
-
       </div>
     )
   }

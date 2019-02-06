@@ -42,6 +42,11 @@ app.get('/labels', (req, res) => {
   })
 })
 
+app.get('/photos/:fileName', (req, res) => {
+  const fileName = req.params.fileName;
+  res.sendFile(`/Users/student/dev/assignments/text-detect/tmp/${fileName}`)
+})
+
 app.post('/photos', type, (req, res) => {
   console.log(req.body, req.file)
 
