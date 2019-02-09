@@ -16,7 +16,7 @@ class App extends Component {
           <Route exact path="/quality" component={Quality} />
           <Route exact path="/article" component={Article} />
         </Switch>
-        <h1>This is the beggining of Mikki's Restaurant website</h1>
+
       </div>
     );
   }
