@@ -4,10 +4,10 @@ function Home() {
   return (
     <div className="home-wrap">
       <header className="home-header">
-        <h1>Home Page Header</h1>
+        <h1>Mikki's Restaurant</h1>
       </header>
       <p className="home-p">
-        Mikki's Restaurant
+        Here will be the Vibe Style and Atmoshpere of the Restaurant
       </p>
       <footer className="home-footer">Home page footer</footer>
     </div>
