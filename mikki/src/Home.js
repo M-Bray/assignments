@@ -7,7 +7,7 @@ function Home() {
         <h1>Home Page Header</h1>
       </header>
       <p className="home-p">
-        home page p-tag here
+        Mikki's Restaurant
       </p>
       <footer className="home-footer">Home page footer</footer>
     </div>
