@@ -1,0 +1,147 @@
+/* * {
+  margin: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+
+.site-wrap {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(252, 252, 248, 0.2);
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 3fr 4fr 1fr 1fr;
+  grid-template: 
+    "n"
+    "h"
+    "m"
+    "vm"
+    "f";
+}
+
+/* NAVBAR */
+
+.nav-tab:before {
+  content: " ";
+  width: auto;
+  height: auto;
+  background: inherit;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -25px;
+  bottom: -5px;
+  box-shadow: inset 0 0 0 200px rgba(86, 90, 94, 0.288);
+  filter: blur(9px);
+  grid-area: n;
+}
+
+.nav-tab {
+  display: flex;
+  background: inherit;
+  justify-content: space-around;
+  float: left;
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  border-radius: 2px;
+  align-items: center;
+  overflow: hidden;
+  grid-area: n;
+}
+
+.nav-buttons {
+  position: relative;
+  padding: 0;
+  width: auto;
+  font-size: 1.6em;
+  color: rgb(170, 170, 170);
+  text-decoration-line: none;
+  text-shadow: 0px 0px 1px rgb(0, 0, 0);
+  transition: color .25s ease-in-out, text-shadow .25s ease-in-out;
+  border-radius: 2px;
+}
+
+.nav-buttons:hover {
+  position: relative;
+  cursor: pointer;
+  text-shadow: 0px 0px 4px rgb(214, 214, 214);
+  color: rgb(221, 221, 221);
+}
+
+.nav-buttons:active {
+  cursor: pointer;
+  text-shadow: 0px 0px 4px black;
+}
+
+.headerClass {
+  background-color: rgb(179, 179, 179);
+  grid-area: h;
+}
+
+.titleHeader {
+  font-size: 44px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-shadow: 0px 0px 5px rgb(255, 4, 4);
+}
+
+.introPar {
+  margin: 20px;
+}
+
+main {
+  grid-area: m;
+  text-align: center;
+}
+
+.clickBlog {
+  margin: 22px;
+  height: auto;
+  width: 290px;
+  text-shadow: 0px 0px 10px black;
+  color: lavenderblush;
+  transition: box-shadow .25s ease-in-out;
+  border-radius: 3px;
+  font-size: 20px;
+}
+
+.clickBlog:hover {
+  cursor: pointer;
+  box-shadow: 10px 14px 7px -5px black;
+  background-color: rgba(255, 254, 127, .2);
+}
+
+.viewMore {
+  margin: auto;
+  width: 103px;
+  font-size: 16px;
+  background-color: green;
+  border-radius: 20px;
+  grid-area: vm;
+  color: whitesmoke;
+  align-items: center;
+  transition: background-color .25s ease-in-out, box-shadow .25s ease-in-out;
+}
+
+.viewMore:hover {
+  cursor: pointer;
+  box-shadow: 10px 14px 7px -5px black;
+  background-color: orangered;
+} 
+
+.footClass {
+  background-color: rgb(202, 202, 202);
+  margin-bottom: 30px;
+  grid-area: f;
+}
+
+.footInput {
+  background-color: rgba(255, 254, 127, .2);
+}
