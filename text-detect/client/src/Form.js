@@ -17,8 +17,4 @@ function Form(props) {
   )
 }
 
-{/* <input id="pic-input" type="file" name="pic" accept="image/*"></input>
-        <button onClick={props.photoClick} type="button"></button>
-      </form> */}
-
 export default Form
