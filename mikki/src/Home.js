@@ -1,8 +1,10 @@
 import React from 'react'
+import Header from './Header'
 
 function Home() {
   return (
     <div className="home-wrap">
+      <Header />
       <header className="home-header">
         <h1>Mikki's Restaurant</h1>
       </header>
