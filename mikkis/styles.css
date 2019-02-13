@@ -7,17 +7,28 @@
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr 4fr 1fr 1fr;
+  grid-template: 
+    "n"
+    "h"
+    "m"
+    "vm"
+    "f";
+  
 }
 
+/* NAVIGATION BAR */
 .nav-tab {
   overflow: hidden;
-  background-color: #333;
+  background-color: rgb(255, 241, 228);
+  align-self: center;
+  grid-area: n;
 }
 
 .nav-tab a {
+  height: 100%;
+  color: black;
   float: left;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -30,6 +41,44 @@
 }
 
 .nav-tab a.active {
-  background-color: #4CAF50;
+  background-color: rgb(175, 76, 137);
   color: white;
+}
+
+/* HEADER--- POSSIBLY JUST HOME */
+.header-class {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: h;
+}
+
+.title-header {
+  color: rgb(14, 6, 6);
+}
+
+/* MAIN ZONE */
+.main-wrap {
+  display: flex;
+  width: auto;
+  grid-area: m;
+}
+
+.click-blog {
+  margin: .5%;
+  padding: 10px;
+}
+
+.par-class {
+  font-size: 20px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 3px black;
+}
+
+.view-more {
+  grid-area: vm;
+}
+
+.footer-class {
+  grid-area: f;
 }
