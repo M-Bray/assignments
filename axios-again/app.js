@@ -1,7 +1,7 @@
-const axios = require('axios');
-
-axios.get('https://api.vschool.io/Mikey/todo').then(function(res, req) {
+axios.get('https://api.vschool.io/Mikey/todo').then(function (res, req) {
   const div = document.getElementById('root');
-  div.appendChild(res.data);
+  const p = document.createElement('div');
+  p.innerText = res.data;
+  div.appendChild(p);
 });
 
