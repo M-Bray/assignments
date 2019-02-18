@@ -20,7 +20,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <hi>{this.state.count}</hi>
+        <hi className="header">{this.state.count}</hi>
         <button onClick={this.handleClick}>Click</button>
       </div>
     )
