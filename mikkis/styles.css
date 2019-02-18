@@ -13,13 +13,13 @@ body {
   width: 100vw;
   height: 100vh;
   grid-template-rows: 1fr 3fr 4fr 1fr 1fr;
-  grid-template: 
+  grid-template:
     "n"
     "h"
     "m"
     "vm"
     "f";
-  
+
 }
 
 /* NAVIGATION BAR */
@@ -72,6 +72,9 @@ body {
 .click-blog {
   margin: .5%;
   padding: 10px;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  height: 100vh;
+  background-position: center; 
 }
 
 .par-class {
@@ -86,4 +89,5 @@ body {
 
 .footer-class {
   grid-area: f;
+  align-items: center;
 }
