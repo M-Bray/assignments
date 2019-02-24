@@ -64,7 +64,7 @@ export default class VisionData extends Component {
           })}
           </div>
         </div>
-      </div>
+      </div> 
     )
   }
 }
