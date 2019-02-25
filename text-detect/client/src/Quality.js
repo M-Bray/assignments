@@ -4,15 +4,13 @@ import React from 'react'
 const Quality = () => {
   return (
     <div className="header-wrap">
-      <div>
-        <h3>Our Team</h3>
-        <p>Our team consists of a </p>
+      <div className="quality-div">
+        <h1>Quality</h1>
+        <p>The intentions for this app are to keep things simple and straight to the point.</p>
       </div>
-      <div>
-        <h1>What the fuck Am I doing here</h1>
-      </div>
-      <div>
-        <h1>Our Customer</h1>
+      <div className="improvement-div">
+        <h1>Feedback</h1>
+        <p>Please tell us what you think about Text-Detect and let us know how we may improve our services to better your experience, Thank You.</p>
       </div>
     </div>
   )
