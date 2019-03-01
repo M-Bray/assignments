@@ -105,6 +105,7 @@ body {
 
 /* Header */
 .header-wrap {
+  display: flex;
   width: 500px;
   height: 265px;
   background: url("https://images.pexels.com/photos/977736/pexels-photo-977736.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
@@ -157,7 +158,10 @@ body {
 
 .data-div {
   display: flex;
+  width: 500px;
+  align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
 }
 
 .img-example {
@@ -182,10 +186,11 @@ body {
 
 .input-class {
   width: 162px;
+  background-color: rgba(0, 0, 0, 0.158); 
 }
 
 .image-form {
-  background-color: rgba(155, 155, 155)
+  background-color: rgba(155, 155, 155, 0.342)
 }
 
 #pic-input {
