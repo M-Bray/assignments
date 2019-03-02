@@ -186,7 +186,11 @@ body {
 
 .input-class {
   width: 162px;
-  background-color: rgba(0, 0, 0, 0.158); 
+}
+
+.input-class::-webkit-file-upload-button {
+  background-color: inherit;
+  border: none;
 }
 
 .image-form {
