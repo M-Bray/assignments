@@ -1,0 +1,14 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.count {
+  font-size: 30px;
+  color: rgb(73, 0, 73);
+}
+
+.click-button {
+  font-size: 30px;
+  color: rgb(73, 0, 73);
+}
