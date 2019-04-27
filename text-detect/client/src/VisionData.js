@@ -6,6 +6,7 @@ export default class VisionData extends Component {
   constructor() {
     super()
     this.state = {
+      loading: false,
       photos: [],
     }
     this.sendFile = this.sendFile.bind(this)
@@ -17,6 +18,7 @@ export default class VisionData extends Component {
     return axios.get('/photos')
       .then(response => {
         this.setState({
+          loading: true,
           photos: response.data
         })
       })
@@ -35,6 +37,7 @@ export default class VisionData extends Component {
       })
       .then(image => {
         this.setState(ps => ({
+          loading: false,
           photos: [...ps.photos, image]
         }))
       })
@@ -50,7 +53,7 @@ export default class VisionData extends Component {
               <div className="data-par" key={photo._id}>
                 <img className="img-example" src={`/photos/${photo.filename}`} alt="" />
                 <p className="data-name">{photo.originalname}</p>
-                {photo.textAnnotations && <p> <b>Text Annotation:</b> {photo.textAnnotations}</p>}
+                {photo.textAnnotations && <p> <b>Text Annotation:</b> {this.state.loading ? "Loading" : null }{photo.textAnnotations}</p>}
                 {photo.labelAnnotations.map(annotation => {
                   return (
                     <div className="data-par" key={annotation._id}>
