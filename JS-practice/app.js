@@ -64,3 +64,7 @@
 // }
 
 // person.getDressed();
+
+const doSomething = (a,b) => a === b ? "true" : "false" ;
+console.log(doSomething(2,3))
+
