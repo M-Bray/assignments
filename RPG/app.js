@@ -3,22 +3,34 @@
 
 const readlineSync = require("readline-sync");
 let gameOver = false;
+
 const enemyTypes = ["a Dark Elf" , "a Wicked Witch", "a Grimey Goblin"]
-const spheres = ["Blue", "Yellow", "Red"]
+//const color = ["red", "orange", "yellow", "green", "blue", "purple", "black", "white", "gold", "silver"]
+
+
+class MagicOrb {
+    constructor(color, element, mp) {
+        this.color = color;
+        this.element = element;
+        this.mp = mp;
+    }
+}
+
+const fireOrb = new MagicOrb("Red", "Fire", 35);
+const solarOrb = new MagicOrb("Yellow", "Divine Light", 47);
+
 
 class Player {
-    constructor(name, hp, sphere) {
+    constructor(name, hp) {
         this.name = name;
         this.hp = 100;
-        this.sphere = [];
     }
 }
 
 class Enemy {
-    constructor(name, hp, sphere) {
+    constructor(name, hp) {
         this.name = getRandomElement(enemyTypes);
         this.hp = 100;
-        this.sphere = getRandomElement(spheres);
     }
 }
 
@@ -29,6 +41,14 @@ function attack(character) {
 
 Player.prototype.attack = attack;
 Enemy.prototype.attack = attack;
+
+// const heal = (character) => {
+//    var recover = this.MagicOrb.mp;
+//    character.hp += recover; 
+// }
+// Player.prototype.recover = recover;
+// Enemy.prototype.recover = recover;
+
 
 function getRandomElement(arr) {
     var index = Math.floor(Math.random() * arr.length)
@@ -77,7 +97,12 @@ while (!gameOver) {
                 console.log(enemy.name + " has " + enemy.hp + " health left\n");
                 enemy.attack(player1);
                 console.log(player1.name + " has " + player1.hp + " health left\n");
-                if (player1.hp <= 0) {
+                if (player1.hp <= 80) {
+                    const charge = readlineSync.keyInYN("A great and powerful " + solarOrb.color + " Orb summons you \n " + "Will You " + player1.name + " weild its " + solarOrb.element + " and accept your destiny? \n");
+                    if (charge) {
+                        player1.hp += solarOrb.mp;
+                        console.log("You have been healed!")
+                    } 
                     console.log("You have Died, Game Over!");
                     player1.hp += 100;
                     break;
