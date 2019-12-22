@@ -1,11 +1,12 @@
+// IMPORT (?)
 const readlineSync = require("readline-sync")
-let power = true;
+let gameOver = false;
 
 //FUNCTION BUILDING
-
-
-
-
+function getRandomElement(arr) {
+  var index = Math.floor(Math.random() * arr.length);
+  return arr[index]
+}
 
 //CHARACTER BUILDING
 class Bear {
@@ -15,14 +16,36 @@ class Bear {
   }
 }
 
+class Enemy {
+  constructor(name, power, gender, race) {
+    this.name = name;
+    this.power = power;
+    this.gender = gender;
+    this.race = race;
+  }
+}
+
+const enemy1 = new Enemy("Pee N. WX", "Alphebitizing Awareness Ninja", "Female" , "Gorilla/ Dinosaur");
+const enemy2 = new Enemy("")
+
 const polarBear = new Bear("polar bear", "white");
 const grizzlyBear = new Bear("grizzy bear", "brown");
 const blackBear = new Bear("black bear", "black");
 
- var bears = [];
+const bears = [];
+ 
+bears.push(polarBear, grizzlyBear, blackBear);
+ 
+const randomBear1 = getRandomElement(bears);
 
- bears.push(polarBear, grizzlyBear, blackBear);
 
+
+// const test = (x) => {
+//   x ? console.log("hello") : console.log("Goodbye");
+// };
+
+// setTimeout(test(true), 2000);
+// console.log(setTimeout);
 
 class ChosenOne {
   constructor(name, animal, hp, health, energy){
@@ -32,18 +55,11 @@ class ChosenOne {
   }
 }
 
-function getRandomElement(arr) {
-  var index = Math.floor(Math.random() * arr.length);
-  return arr[index]
-}
-
-
 //GAMELOOP
-while (power){
+while (!gameOver){
   const yourName = readlineSync.question("Who are you?\n");
-  const player1 = new ChosenOne(yourName, getRandomElement(bears));
+  const player1 = new ChosenOne(yourName, randomBear1);
   console.log("\n\n" + player1.name + ",\nYour spirit animal is a   ....   " + player1.animal.type);
-  
   const begin = readlineSync.question("\nWould you like to begin?\nYES or NO?\n");
   
   if (begin === "YES") {
@@ -61,23 +77,6 @@ while (power){
     console.log("You have begun your jouney East\n\nGood Luck!\n");
     continue;
   } else {
-    power = false
+    gameOver = true
   }
-
-
-
-
-
 };
-
-
-
-
-
-
-
-
-
-
-
-
