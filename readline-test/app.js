@@ -3,7 +3,8 @@ const readlineSync = require("readline-sync")
 let gameOver = false;
 
 //FUNCTION BUILDING
-function getRandomElement(arr) {
+
+const getRandomElement = (arr) => {
   var index = Math.floor(Math.random() * arr.length);
   return arr[index]
 }
@@ -17,12 +18,14 @@ const dayTime = () => timeOfDay() <= 10 ? `Morning` : timeOfDay() <= 12 ? `Late 
 
 
 //CHARACTER BUILDING
-class Bear {
-  constructor(type, color) {
-    this.type = type
-    this.color = color
-  }
-}
+class Animal {
+  constructor(species, color, hp) {
+    this.species = species;
+    this.color = color;
+    this.hp = hp;
+    this.item = [];
+  };
+};
 
 class Enemy {
   constructor(name, power, gender, race) {
@@ -30,21 +33,21 @@ class Enemy {
     this.power = power;
     this.gender = gender;
     this.race = race;
-  }
-}
+  };
+};
 
-const enemy1 = new Enemy("Pee N. WX", "Alphebitizing Awareness Ninja", "Female" , "Gorilla/ Dinosaur");
-const enemy2 = new Enemy("")
+const blackBear = new Animal("black bear", "black", 80);
+const mountainLion = new Animal("mountain lion", "wheat", 100);
+const redTailHawk = new Animal("red tailed hawk", "white/brown/red", 70);
+const racoon = new Animal("racoon", "black/white", 50);
+const rattleSnake = new Animal("rattle snake", "brown/black", 70);
+const squirrel = new Animal("squirrel", "brown/grey", 40);
 
-const polarBear = new Bear("polar bear", "white");
-const grizzlyBear = new Bear("grizzy bear", "brown");
-const blackBear = new Bear("black bear", "black");
-
-const bears = [];
+const animals = [];
  
-bears.push(polarBear, grizzlyBear, blackBear);
+animals.push(blackBear, mountainLion, redTailHawk, rattleSnake, racoon, squirrel);
  
-const randomBear = getRandomElement(bears);
+const randomAnimal = getRandomElement(animals);
 
 
 
@@ -55,24 +58,32 @@ const randomBear = getRandomElement(bears);
 // setTimeout(test(true), 2000);
 // console.log(setTimeout);
 
-class ChosenOne {
-  constructor(name, animal, hp, health, energy){
+class Player {
+  constructor(name, hp, animal){
     this.name = name;
-    this.animal = animal;
     this.hp = hp;
+    this.animal = animal;
   }
+}
+
+const print = (x) => {
+  console.log(`Name: ${x.name}\nHP: ${x.hp}`)
 }
 
 //GAMELOOP
 while (!gameOver){
-  const yourName = readlineSync.question(`\n\nWhat is your name?\n\n`);
-  const player1 = new ChosenOne(yourName);
-  console.log(`\nHello ${player1.name}, and good ${dayTime()} to you.\n`);
-  readlineSync.keyInPause(`\nTo continue on this journey you must first allow your animal spirit to be awakened`)
-  const spiritAnimal =  readlineSync.keyInYN(`\nWould you like to know the animal that calls from within you?`);
+  const yourName = readlineSync.question(`${'\x1b[31m'}\n\nWhat is your name?\n\n`);
+  const player1 = new Player(yourName);
+  console.log(` ${'\x1b[33m'} \nHello ${player1.name}, and Good ${dayTime()} to you!\n`);
+  const yourHP = readlineSync.question(`${'\x1b[32m'}\nGive yourself HP and begin.\n`);
+  player1.hp = yourHP; 
+  print(player1);
+
+  readlineSync.keyInPause(`${'\x1b[34m'}\nTo continue on this journey you must first allow your animal spirit to be awakened`)
+  const spiritAnimal =  readlineSync.keyInYN(`${'\x1b[35m'}\nWould you like to know the animal that calls from within you?`);
   if (spiritAnimal) {
-    player1.animal = randomBear;
-    console.log(`\nThe ${player1.animal} has been awoken within you and will be your guide.`)
+    player1.animal = randomAnimal;
+    console.log(`${'\x1b[31m'}\nThe ${player1.animal.species} has been awoken within you and will be your guide.`)
   }
   const begin = readlineSync.question("\nWould you like to begin?\nYES or NO?\n");
   
