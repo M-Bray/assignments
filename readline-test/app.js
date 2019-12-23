@@ -8,6 +8,14 @@ function getRandomElement(arr) {
   return arr[index]
 }
 
+const timeOfDay = () => {
+  const d = new Date();
+  return d.getHours();
+}
+
+const dayTime = () => timeOfDay() <= 10 ? `Morning` : timeOfDay() <= 12 ? `Late Morning` : timeOfDay() < 18 ? `Afternoon` : timeOfDay() < 24 ? `Evening` : `not sure`;
+
+
 //CHARACTER BUILDING
 class Bear {
   constructor(type, color) {
@@ -36,7 +44,7 @@ const bears = [];
  
 bears.push(polarBear, grizzlyBear, blackBear);
  
-const randomBear1 = getRandomElement(bears);
+const randomBear = getRandomElement(bears);
 
 
 
@@ -57,9 +65,15 @@ class ChosenOne {
 
 //GAMELOOP
 while (!gameOver){
-  const yourName = readlineSync.question("Who are you?\n");
-  const player1 = new ChosenOne(yourName, randomBear1);
-  console.log("\n\n" + player1.name + ",\nYour spirit animal is a   ....   " + player1.animal.type);
+  const yourName = readlineSync.question(`\n\nWhat is your name?\n\n`);
+  const player1 = new ChosenOne(yourName);
+  console.log(`\nHello ${player1.name}, and good ${dayTime()} to you.\n`);
+  readlineSync.keyInPause(`\nTo continue on this journey you must first allow your animal spirit to be awakened`)
+  const spiritAnimal =  readlineSync.keyInYN(`\nWould you like to know the animal that calls from within you?`);
+  if (spiritAnimal) {
+    player1.animal = randomBear;
+    console.log(`\nThe ${player1.animal} has been awoken within you and will be your guide.`)
+  }
   const begin = readlineSync.question("\nWould you like to begin?\nYES or NO?\n");
   
   if (begin === "YES") {
