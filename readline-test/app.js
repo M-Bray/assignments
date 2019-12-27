@@ -3,6 +3,7 @@ const readlineSync = require("readline-sync")
 let gameOver = false;
 
 //FUNCTION BUILDING
+const myArray = ["hello", "goodbye", "howdy-howdy"];
 
 const getRandomElement = (arr) => {
   var index = Math.floor(Math.random() * arr.length);
@@ -72,8 +73,20 @@ const print = (x) => {
 
 //GAMELOOP
 while (!gameOver){
+  
   const yourName = readlineSync.question(`${'\x1b[31m'}\n\nWhat is your name?\n\n`);
   const player1 = new Player(yourName);
+
+  // for (let i = 0; i < animals.length; i++) {
+  //   task(i)
+  // }
+
+  // function task(i) { 
+  //   setTimeout(function() {console.log(animals[i])}, 1000 * i)
+  // }}
+
+  
+
   console.log(` ${'\x1b[33m'} \nHello ${player1.name}, and Good ${dayTime()} to you!\n`);
   const yourHP = readlineSync.question(`${'\x1b[32m'}\nGive yourself HP and begin.\n`);
   player1.hp = yourHP; 
@@ -91,16 +104,22 @@ while (!gameOver){
     console.log("Great!\n\nLets begin\n");
   } else {
     readlineSync.keyInPause("\n...GAME OVER...\n");
-    break;
+    gameOver = true
   };
   console.log("Which direction will you travel?\n")
   const eastOrWest = readlineSync.question("\nEast, or West?\n\n");
   if (eastOrWest === "West") {
     console.log("\nYour journey has begun and you are headed West towards the beautiful Sierra Nevada Mountains\n");
-    continue;
-  } else if (eastOrWest === "East") {
+    const scared = readlineSync.keyInYN(`You scared?`)
+    if (scared) {
+      console.log(`You better get tough quick bud It's okay if you are...`) 
+    } else {
+      console.log(`You don't have to pretend..`)
+    }
+  } 
+  if (eastOrWest === "East") {
     console.log("You have begun your jouney East\n\nGood Luck!\n");
-    continue;
+    
   } else {
     gameOver = true
   }
